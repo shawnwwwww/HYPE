@@ -1,0 +1,55 @@
+.Sidebar{ 
+    height: 100%;
+    width: 272px;
+    background: rgb(19,16,22);
+    background: linear-gradient(180deg, rgba(19,16,22,1) 0%, rgba(222,91,255,1) 100%);
+    padding: 80px 0 60px 0;
+ 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.SidebarList{
+    padding: 0px;
+    margin: 70px 0 0 0;
+}
+
+.SidebarList .row{
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color: rgba(222, 91, 255, 0.4);
+    justify-content: left;
+    align-items: center;
+    padding: 22px 0 22px 40px;
+    box-sizing: border-box;
+    
+}
+
+
+.SidebarList .row:hover{
+    cursor: pointer;
+    color: #DE5BFF;
+}
+
+.Sidebar #active{
+    color: #DE5BFF;
+
+}
+
+
+
+.row #icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+}
+
+
+.UserProfile{
+    padding-left: 40px;
+}

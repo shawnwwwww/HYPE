@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+.App{
+    width: 100vw;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
+    padding: 0;
+    background: #131016;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    font-family: Kanit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 1)
+    , rgba(255, 255, 255, 0.4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h5{
+    font-family: Kanit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    margin: 0;
+    color: #FFFFFF;
+
 }
 
-.App-link {
-  color: #61dafb;
+.h6{
+    font-family: Kanit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h6{
+    font-family: Kanit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.titleP{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 110%;
+    /* identical to box height, or 20px */
+
+
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+p{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 106%;
+    /* identical to box height, or 17px */
+
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+
+.caption{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+    opacity: 0.7;
+}
+
+.boldCaption{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    /* identical to box height, or 17px */
+
+    letter-spacing: 0.02em;
+}
+
+.buttonText{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #DE5BFF;
+}
+
+.hypeButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 18px;
+    border: 1px solid #DE5BFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.hypeButton{
+    cursor: pointer;
 }
