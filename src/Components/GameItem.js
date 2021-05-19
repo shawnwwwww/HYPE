@@ -1,13 +1,15 @@
 import React from 'react'
 import './GameItem.css'
-import {GameData} from './GameData'
+import { GameData } from './GameData'
 
-function GameItem({title,imageUrl,body}) {
+
+function GameItem({ title, imageUrl, body }) {
+
     return (
         <div className='card-container'>
             {GameData.map((val, key) => {
                 return (
-                    <div className='card'>
+                    <div className='card' key={key}>
                         <div className='GameInfo'>
                             
                             <div className='imageContainer'> 
@@ -15,8 +17,13 @@ function GameItem({title,imageUrl,body}) {
                                 <img className='digitalImage' src={val.digitalImage}></img>
                             </div>
                             <div className='platformList'>
-                                <div className='platformIcon'> <p className='boldCaption'>{val.Platform}</p>
-                                </div>
+                                {
+                                    val.Platform.map((platform, i) =>
+                                        <div className='platformIcon' key={i}>
+                                            <p className='boldCaption'>{platform}</p>
+                                        </div>
+                                    )
+                                }
                             </div>
                             <div className='titleAndDate'>
                                 <p className='titleP'>{val.title}</p>
