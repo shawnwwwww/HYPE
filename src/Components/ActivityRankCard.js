@@ -6,7 +6,7 @@ import {GameData} from './GameData'
 
 export default function ActivityRankCard() {
     return (
-        <div className='activityCard'>
+        <div className='activityCard' id='rankCard'>
             <h5>HYPE OF THE WEEK</h5>
             <div className='rankContainer'>
                 <div className='rankItemContainer'>

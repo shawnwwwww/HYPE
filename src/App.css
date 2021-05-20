@@ -1,7 +1,37 @@
 .App{
     width: 100vw;
     height: 100vh;
+    display: grid;
+    gap: 0;
+    grid-template-areas: 
+    "sidebar"
+    "appcontainer";
 }
+
+/*breakpoint tablet*/
+@media (min-width: 768px) {
+  .App{
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "sidebar appcontainer";
+}
+
+}
+
+
+
+.AppContainer{
+  grid-area: appcontainer;
+  padding: 80px 70px 120px 70px;
+  box-sizing: border-box;
+}
+
+.ActivityCards{
+  display: grid;
+  grid-template-columns: repeat(10, [col-start] 1fr);
+  gap: 26px;
+}
+
 
 body{
     margin: 0;
@@ -24,31 +54,24 @@ h1{
 }
 
 h5{
-    font-family: Kanit;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-    margin: 0;
-    color: #FFFFFF;
-
+  font-family: Kanit;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  margin: 0;
+  color: #FFFFFF;
 }
 
-.h6{
-    font-family: Kanit;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-}
 
 h6{
-    font-family: Kanit;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
+  font-family: Kanit;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
 }
 
 .titleP{
@@ -115,6 +138,22 @@ p{
     color: #DE5BFF;
 }
 
+button.textOnly{
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #DE5BFF;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
 .hypeButton{
     display: flex;
     flex-direction: row;
@@ -128,6 +167,16 @@ p{
 
 .hypeButton{
     cursor: pointer;
+}
+
+.gamePreview{
+
+}
+
+.compact{
+  width: 84px;
+  box-sizing: border-box;
+  margin-right: 20px;
 }
 
 /* thai */

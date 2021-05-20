@@ -13,7 +13,7 @@ function Sidebar() {
                             <li className='row' id={window.location.pathname == val.link ? "active" : ""} key={key} onClick={()=> {window.location.pathname = val.link}}> 
                             {""}
                                 <div id='icon'>{val.icon}</div> {""}
-                                <div id='title' className='h6'>{val.title}</div>
+                                <h6 id='title'>{val.title}</h6>
                             </li>
                         )
                     })}
