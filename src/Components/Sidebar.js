@@ -1,8 +1,13 @@
 import React from 'react'
 import './Sidebar.css';
-import {SidebarData} from './SidebarData';
+import { SidebarData } from './SidebarData';
+import { Redirect, useHistory } from 'react-router-dom';
+
 
 function Sidebar() {
+  const history = useHistory();
+  const handleOnClick = (url) => history.push(url);
+
     return (
         <div className='Sidebar'>
             <div>
@@ -10,11 +15,11 @@ function Sidebar() {
                 <ul className='SidebarList'>
                     {SidebarData.map((val, key) => {
                         return (
-                            <li className='row' id={window.location.pathname == val.link ? "active" : ""} key={key} onClick={()=> {window.location.pathname = val.link}}> 
+                          <li className='row' id={val.link ? "active" : ""} key={key} onClick={handleOnClick(val.link)}> 
                             {""}
                                 <div id='icon'>{val.icon}</div> {""}
                                 <h6 id='title'>{val.title}</h6>
-                            </li>
+                          </li>
                         )
                     })}
                 </ul>

@@ -2,26 +2,39 @@ import logo from './logo.svg';
 import './App.css';
 import Sidebar from './Components/Sidebar'
 import GameItem from './Components/GameItem'
-import ActivityRankCard from './Components/ActivityRankCard'
-import ActivityHypeListCard from './Components/ActivityHypeListCard'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect
+} from "react-router-dom"
+
+// Pages
+import Home from "./Pages/Home"
+import GameDetail from "./Pages/GameDetail"
+
+/* NOTES */
+// Right now the default page goes to "/profile" due to something with
+// history in SideBar.js I believe.
 
 function App() {
   return (
     <div className="App">
       <Sidebar />
-      <div className='AppContainer'>
-          <div className='ActivityCards'>
-            <ActivityRankCard />
-            <ActivityHypeListCard />
-
-          </div>
-
-
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/allreleases" component={Home} />
+          <Route exact path="/profile" component={Home} />
+          <Route exact path="/gamedetail" component={GameDetail} />
+          {/*Default page if the user manually changes path*/}
+          <Route component={Home} />
+          <Redirect to="/home" />
+        </Switch>
+      </Router>
       
     </div>
   );
