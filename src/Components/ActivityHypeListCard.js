@@ -8,7 +8,7 @@ import { GameData } from './GameData'
 export default function ActivityHypeListCard() {
     return (
         <div className='activityCard' id='hypeListCard'>
-            <h5>HYPE OF THE WEEK</h5>
+            <h5>YOUR HYPE LIST</h5>
             <div className='previewContainer'>
                 {GameData.map((val, key) => {
                     return (
