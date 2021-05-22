@@ -5,7 +5,7 @@ export const GameData = [
     {
         title: "Miitopia", 
         releaseDate: '5/21/2021', 
-        Platform: ["Switch"],
+        platform: ["Switch"],
         digitalImage: 'https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg', 
         physicalImage: 'https://images-na.ssl-images-amazon.com/images/I/914DjSGDYyL._SL1500_.jpg',
 
@@ -13,9 +13,57 @@ export const GameData = [
     {
         title: "Ratchet and Clank: Rift Apart", 
         releaseDate: '6/11/2021', 
-        Platform: ["PS5", "PS4"],
+        platform: ["PS5", "PS4"],
         digitalImage: 'https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$native$', 
-        physicalImage: 'https://uc5b1c4a78fb96d54100da87111c.previews.dropboxusercontent.com/p/thumb/ABKQ5UqY1SHzAVLE2_BlOxy1fX-qnH_5BNK4XDa0Ur9cakCEXhlRULjNteyEw8CS8pNd60DA2QA3GiQxIxw7wkZWR2BQ_SlHl3OK1KMdZUwP_cGgPcdj9qWgSv7BiO_jkRXLsq2MuMoyfygo7mK5STksiopFArUA3mmZnbgxWff3JhJyA83j-Kn4aF7L8cwfBIuYjsthGmIHCBAiNXW-HZm-job53GIq2rKb4Ostevj48yXnbtZ787g69DN7677HxnU2VP7-DU2WlT2nfU3bHgTQLH1fRP1erbZGZhYzhK-B-tn29imCRrfEm62hWPm8yilsF1Cm07ZcrFlrPvcs7mQxMOxlXwh-sCt7zejQOkjZKqSGmeo4g-oTYWBuFH2XS8THXkm4GGlXnUppyp09k2YZeu3GKs1h_EDcE5TJpIGbOXJ6ZKD_F6A1VUU0_wvuAnCiPkhh1JB-DLJVwdYF4EM8/p.png?fv_content=true&size_mode=5',
+        physicalImage: 'https://previews.dropbox.com/p/thumb/ABLjebfoasrdMFP41DFULIs9D8ICwSMZwWwaD3Y4drD9DRhFJ2dCfr2goqSVmnlICGr9T9ScXYT5H2HpHi1F1AVkXtZScZUkJU6WsfRXnCCSWOwOv0EdUMMpAIpJxhAz1dr_VmjAY5IwSt6UQR8NWKE_0Jrw-ZgefJNKyf-XDlMDEmaAPhWltzu_QjLmElcw1fA4svXT7-KPKUbXY1yTIgEMWKtsfU9ORZnNYagg7rnenwHd0dpRH-e7f3lvHQu53nvz0S3VmpUq2But4RldLsH8Njm0qtcQ0jnuwjffHUO3P4DZ56Yj03lothXS9HwTbkN-ECGoDc3U9682eDTbjWgMEKK_hY1C8eTBtaKtcMdeEc80UZ4vWc4e-xNHJLsBeTv4__28ETlWSBLgSnHHHDuJA6ONMYBJstPUkVrRaJNDeA/p.png?fv_content=true&size_mode=5',
+
+    },
+    {
+        title: "Ratchet and Clank: Rift Apart", 
+        releaseDate: '6/11/2021', 
+        platform: ["PS5", "PS4"],
+        digitalImage: 'https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$native$', 
+        physicalImage: 'https://previews.dropbox.com/p/thumb/ABLjebfoasrdMFP41DFULIs9D8ICwSMZwWwaD3Y4drD9DRhFJ2dCfr2goqSVmnlICGr9T9ScXYT5H2HpHi1F1AVkXtZScZUkJU6WsfRXnCCSWOwOv0EdUMMpAIpJxhAz1dr_VmjAY5IwSt6UQR8NWKE_0Jrw-ZgefJNKyf-XDlMDEmaAPhWltzu_QjLmElcw1fA4svXT7-KPKUbXY1yTIgEMWKtsfU9ORZnNYagg7rnenwHd0dpRH-e7f3lvHQu53nvz0S3VmpUq2But4RldLsH8Njm0qtcQ0jnuwjffHUO3P4DZ56Yj03lothXS9HwTbkN-ECGoDc3U9682eDTbjWgMEKK_hY1C8eTBtaKtcMdeEc80UZ4vWc4e-xNHJLsBeTv4__28ETlWSBLgSnHHHDuJA6ONMYBJstPUkVrRaJNDeA/p.png?fv_content=true&size_mode=5',
+
+    },
+    {
+        title: "Ratchet and Clank: Rift Apart", 
+        releaseDate: '6/11/2021', 
+        platform: ["PS5", "PS4"],
+        digitalImage: 'https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$native$', 
+        physicalImage: 'https://previews.dropbox.com/p/thumb/ABLjebfoasrdMFP41DFULIs9D8ICwSMZwWwaD3Y4drD9DRhFJ2dCfr2goqSVmnlICGr9T9ScXYT5H2HpHi1F1AVkXtZScZUkJU6WsfRXnCCSWOwOv0EdUMMpAIpJxhAz1dr_VmjAY5IwSt6UQR8NWKE_0Jrw-ZgefJNKyf-XDlMDEmaAPhWltzu_QjLmElcw1fA4svXT7-KPKUbXY1yTIgEMWKtsfU9ORZnNYagg7rnenwHd0dpRH-e7f3lvHQu53nvz0S3VmpUq2But4RldLsH8Njm0qtcQ0jnuwjffHUO3P4DZ56Yj03lothXS9HwTbkN-ECGoDc3U9682eDTbjWgMEKK_hY1C8eTBtaKtcMdeEc80UZ4vWc4e-xNHJLsBeTv4__28ETlWSBLgSnHHHDuJA6ONMYBJstPUkVrRaJNDeA/p.png?fv_content=true&size_mode=5',
+
+    },
+    {
+        title: "Ratchet and Clank: Rift Apart", 
+        releaseDate: '6/11/2021', 
+        platform: ["PS5", "PS4"],
+        digitalImage: 'https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$native$', 
+        physicalImage: 'https://previews.dropbox.com/p/thumb/ABLjebfoasrdMFP41DFULIs9D8ICwSMZwWwaD3Y4drD9DRhFJ2dCfr2goqSVmnlICGr9T9ScXYT5H2HpHi1F1AVkXtZScZUkJU6WsfRXnCCSWOwOv0EdUMMpAIpJxhAz1dr_VmjAY5IwSt6UQR8NWKE_0Jrw-ZgefJNKyf-XDlMDEmaAPhWltzu_QjLmElcw1fA4svXT7-KPKUbXY1yTIgEMWKtsfU9ORZnNYagg7rnenwHd0dpRH-e7f3lvHQu53nvz0S3VmpUq2But4RldLsH8Njm0qtcQ0jnuwjffHUO3P4DZ56Yj03lothXS9HwTbkN-ECGoDc3U9682eDTbjWgMEKK_hY1C8eTBtaKtcMdeEc80UZ4vWc4e-xNHJLsBeTv4__28ETlWSBLgSnHHHDuJA6ONMYBJstPUkVrRaJNDeA/p.png?fv_content=true&size_mode=5',
+
+    },
+    {
+        title: "Ratchet and Clank: Rift Apart", 
+        releaseDate: '6/11/2021', 
+        platform: ["PS5", "PS4"],
+        digitalImage: 'https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$native$', 
+        physicalImage: 'https://previews.dropbox.com/p/thumb/ABLjebfoasrdMFP41DFULIs9D8ICwSMZwWwaD3Y4drD9DRhFJ2dCfr2goqSVmnlICGr9T9ScXYT5H2HpHi1F1AVkXtZScZUkJU6WsfRXnCCSWOwOv0EdUMMpAIpJxhAz1dr_VmjAY5IwSt6UQR8NWKE_0Jrw-ZgefJNKyf-XDlMDEmaAPhWltzu_QjLmElcw1fA4svXT7-KPKUbXY1yTIgEMWKtsfU9ORZnNYagg7rnenwHd0dpRH-e7f3lvHQu53nvz0S3VmpUq2But4RldLsH8Njm0qtcQ0jnuwjffHUO3P4DZ56Yj03lothXS9HwTbkN-ECGoDc3U9682eDTbjWgMEKK_hY1C8eTBtaKtcMdeEc80UZ4vWc4e-xNHJLsBeTv4__28ETlWSBLgSnHHHDuJA6ONMYBJstPUkVrRaJNDeA/p.png?fv_content=true&size_mode=5',
+
+    },
+    {
+        title: "Ratchet and Clank: Rift Apart", 
+        releaseDate: '6/11/2021', 
+        platform: ["PS5", "PS4"],
+        digitalImage: 'https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$native$', 
+        physicalImage: 'https://previews.dropbox.com/p/thumb/ABLjebfoasrdMFP41DFULIs9D8ICwSMZwWwaD3Y4drD9DRhFJ2dCfr2goqSVmnlICGr9T9ScXYT5H2HpHi1F1AVkXtZScZUkJU6WsfRXnCCSWOwOv0EdUMMpAIpJxhAz1dr_VmjAY5IwSt6UQR8NWKE_0Jrw-ZgefJNKyf-XDlMDEmaAPhWltzu_QjLmElcw1fA4svXT7-KPKUbXY1yTIgEMWKtsfU9ORZnNYagg7rnenwHd0dpRH-e7f3lvHQu53nvz0S3VmpUq2But4RldLsH8Njm0qtcQ0jnuwjffHUO3P4DZ56Yj03lothXS9HwTbkN-ECGoDc3U9682eDTbjWgMEKK_hY1C8eTBtaKtcMdeEc80UZ4vWc4e-xNHJLsBeTv4__28ETlWSBLgSnHHHDuJA6ONMYBJstPUkVrRaJNDeA/p.png?fv_content=true&size_mode=5',
+
+    },
+    {
+        title: "Ratchet and Clank: Rift Apart", 
+        releaseDate: '6/11/2021', 
+        platform: ["PS5", "PS4"],
+        digitalImage: 'https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$native$', 
+        physicalImage: 'https://previews.dropbox.com/p/thumb/ABLjebfoasrdMFP41DFULIs9D8ICwSMZwWwaD3Y4drD9DRhFJ2dCfr2goqSVmnlICGr9T9ScXYT5H2HpHi1F1AVkXtZScZUkJU6WsfRXnCCSWOwOv0EdUMMpAIpJxhAz1dr_VmjAY5IwSt6UQR8NWKE_0Jrw-ZgefJNKyf-XDlMDEmaAPhWltzu_QjLmElcw1fA4svXT7-KPKUbXY1yTIgEMWKtsfU9ORZnNYagg7rnenwHd0dpRH-e7f3lvHQu53nvz0S3VmpUq2But4RldLsH8Njm0qtcQ0jnuwjffHUO3P4DZ56Yj03lothXS9HwTbkN-ECGoDc3U9682eDTbjWgMEKK_hY1C8eTBtaKtcMdeEc80UZ4vWc4e-xNHJLsBeTv4__28ETlWSBLgSnHHHDuJA6ONMYBJstPUkVrRaJNDeA/p.png?fv_content=true&size_mode=5',
 
     },
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import ActivityRankCard from '../Components/ActivityRankCard'
 import ActivityHypeListCard from '../Components/ActivityHypeListCard'
+import GameCardSection from '../Components/GameCardSection'
+
 
 const Home = () => {
   return (
@@ -9,9 +11,8 @@ const Home = () => {
         <div className='ActivityCards'>
           <ActivityRankCard />
           <ActivityHypeListCard />
-
         </div>
-
+        <GameCardSection  title='Releasing Soon'/>
 
       </div>
 

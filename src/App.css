@@ -22,14 +22,28 @@
 
 .AppContainer{
   grid-area: appcontainer;
-  padding: 80px 70px 120px 70px;
+  padding: 80px 70px 120px 342px;
   box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  
+}
+
+/*breakpoint tablet*/
+@media (max-width: 768px) {
+  .AppContainer{
+    padding: 80px 70px 120px 70px;
+  }
+
 }
 
 .ActivityCards{
   display: grid;
   grid-template-columns: repeat(10, [col-start] 1fr);
   gap: 26px;
+  margin-bottom: 50px;
 }
 
 
@@ -51,6 +65,20 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+}
+
+h4{
+  font-family: Kanit;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  margin: 0;
 }
 
 h5{

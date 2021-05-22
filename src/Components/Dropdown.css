@@ -1,0 +1,38 @@
+.react-select-container{
+    border: none !important;
+    margin: 4px 0 30px 0;
+    border-radius: 4px !important;
+    width: 200px !important;
+}
+
+.react-select__control{
+    border: 1px solid #343137 !important;
+    background: 100px !important;
+}
+
+.react-select__value-container{
+    background: #343137 !important;
+}
+
+.react-select__indicator-separator{
+    display: none !important;
+}
+
+.react-select__clear-indicator{
+    display: none !important;
+}
+
+.react-select__indicators{
+    background: #343137 !important;
+
+}
+
+.react-select__multi-value__remove{
+    display: none !important;
+}
+
+.react-select__multi-value__label{
+    padding: 0 !important;
+    background: #343137 !important;
+    color: white !important;
+}

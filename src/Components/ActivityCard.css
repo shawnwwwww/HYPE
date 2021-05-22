@@ -21,18 +21,28 @@
 }
 
 #hypeListCard{
-    grid-column: 5 / span 5;
+    grid-column: 5 / span 6;
     grid-row: 1;
     min-width: 320px;
     flex-direction: row;
 
 }
+/*breakpoint tablet*/
+@media (max-width: 768px) {
+    #hypeListCard{
+        grid-row: 2;
+    }
+  
+  }
 
 .previewContainer{
+    margin-top: 13px;
     display: flex;
     flex-direction: row;
     width: 100%;
-
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: 13px;
 }
 
 .coloredNumber{

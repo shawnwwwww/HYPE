@@ -1,0 +1,22 @@
+.gameCardContainer{
+    display: grid;
+    grid-template-columns: repeat([col-start] 1fr);
+    gap: 26px;
+    margin-bottom: 50px;
+    max-width: 100%;
+
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.gameItem{
+    grid-column-end: span 2;
+    min-width: 152px;
+    grid-row: 1;
+}
+
+.sectionContainer{
+    width: auto;
+    max-width: 100%;
+}
