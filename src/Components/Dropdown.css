@@ -1,14 +1,23 @@
 .react-select-container{
     border: none !important;
     margin: 4px 0 30px 0;
+    display: flex !important;
+    justify-content: left !important;
+    align-items: left !important;
     border-radius: 4px !important;
-    width: 200px !important;
+    /* width: 300px !important; */
 }
 
+
 .react-select__control{
+    padding: 0px 12px 0px 4px !important;
+    background: #343137 !important;
+
+    min-width: 120px !important;
+
     border: 1px solid #343137 !important;
-    background: 100px !important;
 }
+
 
 .react-select__value-container{
     background: #343137 !important;
@@ -19,20 +28,66 @@
 }
 
 .react-select__clear-indicator{
-    display: none !important;
+    /* display: none !important; */
+    background: #343137 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .react-select__indicators{
     background: #343137 !important;
+}
 
+.react-select__indicator{
+    padding: 0 !important;
 }
 
 .react-select__multi-value__remove{
-    display: none !important;
+    /* display: none !important; */
+    background: #343137 !important;
+    color: white;
+    border: none !important;
+}
+
+.react-select__multi-value{
+    grid-row: 1 !important;
+    grid-column-end: span 1!important;
+    margin: 0 2px 0 2px;
 }
 
 .react-select__multi-value__label{
     padding: 0 !important;
     background: #343137 !important;
     color: white !important;
+    border: none !important;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+
+}
+
+.react-select__multi-value{
+    background: #343137 !important;
+}
+.react-select__clear-indicator{
+    margin-right: 6px !important;
+    display: none !important;
+}
+.css-1wa3eu0-placeholder{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
 }

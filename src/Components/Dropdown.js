@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
 import Select from 'react-select'
 import './Dropdown.css';
+import ReactDOM from "react-dom";
 
 
-
-  
 
 function Dropdown(props) {
     /* if option is platform, then use platform 
