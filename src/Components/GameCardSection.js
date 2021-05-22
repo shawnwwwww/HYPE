@@ -10,8 +10,10 @@ function GameCardSection(props) {
         <div className='sectionContainer'>
             <div class='header'>
                 <h4>{props.title}</h4>
-                <div>
-                    <Dropdown option='platform'/>
+                <div className='dropdownGroup'>
+                    <Dropdown isPlatform='true'/>
+                    <Dropdown isPlatform=''/>
+
                 </div>
             </div>
             <div className='gameCardContainer'>

@@ -6,6 +6,9 @@ import ReactDOM from "react-dom";
 
 
 function Dropdown(props) {
+
+    const isPlatform = props.isPlatform;
+
     /* if option is platform, then use platform 
     as default value */
     /* if option is form, then use form 
@@ -33,17 +36,46 @@ function Dropdown(props) {
         },
     ];
 
+    var form=[
+        {
+            value: 'physical', 
+            label: "Physical"
+        },
+        {
+            value: 'digital', 
+            label: "Digital"
+        },
+        {
+            value: 'dlc', 
+            label: "DLC"
+        },
+    ];
 
+
+    if (isPlatform){
+        return (
+            <div>
+                <Select className='react-select-container' classNamePrefix="react-select"
+                    isMulti 
+                    options={platform} 
+                    defaultValue={[platform[0]]}
+                />
+    
+            </div>
+        )
+    }
     return (
         <div>
             <Select className='react-select-container' classNamePrefix="react-select"
                 isMulti 
-                options={platform} 
-                defaultValue={[platform[0]]}
+                options={form} 
+                defaultValue={[form[0],form[1],form[2]]}
             />
 
         </div>
     )
+
+    
 }
 
 export default Dropdown

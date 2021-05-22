@@ -1,5 +1,6 @@
 import React from 'react'
 import './GameItem.css'
+import HypeButton from './HypeButton'
 
 
 function GameItem({physicalImage, digitalImage, title, releaseDate, platform}) {
@@ -24,10 +25,7 @@ function GameItem({physicalImage, digitalImage, title, releaseDate, platform}) {
                     <p className='caption'>{releaseDate}</p>
                 </div>
             </div>
-            <div className='hypeButton' onClick=''>
-                <p className='buttonText'>HYPE</p>
-                <p className='buttonText'>3.1K</p>
-            </div>
+            <HypeButton />
         </div>
     )
 }

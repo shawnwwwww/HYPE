@@ -1,0 +1,20 @@
+.hypeButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 18px;
+    background: rgba(222, 91, 255, 0.04);
+    border: 1px solid rgba(222, 91, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.hypeButton{
+    cursor: pointer;
+}
+
+.hypeButton :active{
+    background: rgba(222, 91, 255, 0.2);
+    border: 1px solid #DE5BFF;
+}

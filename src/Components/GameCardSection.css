@@ -20,3 +20,8 @@
     width: auto;
     max-width: 100%;
 }
+
+.dropdownGroup{
+    display: flex;
+    flex-direction: row;
+}
