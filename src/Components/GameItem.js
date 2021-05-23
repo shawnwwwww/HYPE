@@ -8,15 +8,14 @@ import GameDetail from '../Pages/GameDetail';
 function GameItem({ physicalImage, digitalImage, title, releaseDate, platform }) {
     const history = useHistory();
 
-  const handleOnClick = () => {
-      <Redirect to='/gamedetail' render={(props) => <GameDetail {...props} />} />
+    const handleOnClick = () => {
       history.push('/gamedetail');
     };
 
     return (
         <div className='card'>
             <div className='GameInfo'>          
-                <div className='imageContainer'> 
+          <div className='imageContainer' onClick={() => handleOnClick()}> 
                     <img className='physicalImage' src={physicalImage}></img>
                     <img className='digitalImage' src={digitalImage}></img>
                 </div>
@@ -30,7 +29,7 @@ function GameItem({ physicalImage, digitalImage, title, releaseDate, platform })
                     }
                 </div>
                 <div className='titleAndDate'>
-                <p className='titleP'>{<Link to='/gamedetail'>{title}</Link> }</p>
+                <p className='titleP'>{ <Link to='/gamedetail'>{title}</Link> }</p>
                     <p className='caption'>{releaseDate}</p>
                 </div>
             </div>
