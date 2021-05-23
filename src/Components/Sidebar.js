@@ -7,8 +7,7 @@ import { Redirect, useHistory, withRouter } from 'react-router-dom';
 function Sidebar() {
   const history = useHistory();
   const handleOnClick = (url) => {
-    console.log(url);
-    //< Redirect to={url} />
+
     history.push(url);
   };
 
