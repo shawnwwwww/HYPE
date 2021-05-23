@@ -54,6 +54,15 @@
 
 }
 
+.titleP a{
+    color: white;
+}
+
+.titleP a:hover{
+    opacity: 70%;
+    text-decoration: none;
+}
+
 .card{
     height: 340px;
     display: flex;
