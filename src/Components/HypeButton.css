@@ -15,6 +15,5 @@
 }
 
 .hypeButton :active{
-    background: rgba(222, 91, 255, 0.2);
-    border: 1px solid #DE5BFF;
+    background-color: red;
 }
