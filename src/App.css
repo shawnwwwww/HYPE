@@ -39,6 +39,15 @@
 
 }
 
+
+/*breakpoint mobile*/
+@media (max-width: 480px) {
+  .AppContainer{
+    padding: 80px 26px 120px 26px;
+  }
+
+}
+
 .ActivityCards{
   display: grid;
   grid-template-columns: repeat(10, [col-start] 1fr);
@@ -114,6 +123,8 @@ h6{
     color: #FFFFFF;
     margin-bottom: 4px;
 }
+
+
 
 p{
     font-family: Kanit;

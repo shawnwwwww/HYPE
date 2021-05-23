@@ -3,11 +3,16 @@
     grid-template-columns: repeat([col-start] 1fr);
     gap: 26px;
     margin-bottom: 50px;
-    max-width: 100%;
+    width: 100%;
 
 
     overflow-x: scroll;
     scroll-snap-type: x proximity;
+}
+
+.gridContainer{
+    width: 100% !important;
+    grid-template-columns: repeat(10, [col-start] 1fr);
 }
 
 .gameItem{

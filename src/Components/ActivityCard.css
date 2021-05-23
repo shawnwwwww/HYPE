@@ -15,13 +15,13 @@
 }
 
 #rankCard{
-    grid-column: col-start / span 4;
+    grid-column: col-start / span 5;
     grid-row: 1;
     min-width: 320px;
 }
 
 #hypeListCard{
-    grid-column: 5 / span 6;
+    grid-column: 6 / span 5;
     grid-row: 1;
     min-width: 320px;
     flex-direction: row;
@@ -33,7 +33,23 @@
         grid-row: 2;
     }
   
-  }
+}
+
+/*breakpoint mobile*/
+@media (max-width: 480px) {
+    #hypeListCard{
+        grid-column: col-start / span 10;
+        grid-row: 2;
+        min-width: 0;
+    }
+    #rankCard{
+        grid-column: col-start / span 10;
+        grid-row: 1;
+        min-width: 0;
+
+    }
+  
+}
 
 .previewContainer{
     margin-top: 13px;
