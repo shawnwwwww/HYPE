@@ -3,9 +3,16 @@ import './ActivityCard.css'
 import '../App.css'
 
 import { GameData } from './GameData'
+import { useHistory } from 'react-router-dom';
 
 
 export default function ActivityHypeListCard() {
+    const history = useHistory();
+
+    const handleOnClick = () => {
+        history.push('/profile');
+    }
+
     return (
         <div className='activityCard' id='hypeListCard'>
             <h5>YOUR HYPE LIST</h5>
@@ -20,10 +27,7 @@ export default function ActivityHypeListCard() {
                     )})
                 }
             </div>
-            <button className= 'textOnly'>VIEW ALL</button>
-
-                    
-            
+            <button className='textOnly' onClick={() => handleOnClick()}>VIEW ALL</button>
         </div>
     )
 }
