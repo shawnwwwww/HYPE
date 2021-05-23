@@ -8,7 +8,7 @@ import './GameCardSection.css'
 function GameCardSection(props) {
     return (
         <div className='sectionContainer'>
-            <div class='header'>
+            <div className='header'>
                 <h4>{props.title}</h4>
                 <div className='dropdownGroup'>
                     <Dropdown isPlatform='true'/>

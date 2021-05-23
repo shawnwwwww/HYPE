@@ -55,10 +55,11 @@ function Dropdown(props) {
     if (isPlatform){
         return (
             <div>
-                <Select className='react-select-container' classNamePrefix="react-select"
-                    isMulti 
-                    options={platform} 
-                    defaultValue={[platform[0]]}
+            <Select className='react-select-container' classNamePrefix="react-select"
+              isMulti
+              options={platform}
+              defaultValue={[platform[0]]}
+              /*placeholder="Platform"*/
                 />
     
             </div>

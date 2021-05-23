@@ -9,7 +9,8 @@ import {
   Route,
   Switch,
   Link,
-  Redirect
+  Redirect,
+  withRouter
 } from "react-router-dom"
 
 // Pages
@@ -23,12 +24,13 @@ import GameDetail from "./Pages/GameDetail"
 function App() {
   return (
     <div className="App">
-      <Sidebar />
+      
       <Router>
+        <Sidebar />
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route exact path="/allreleases" component={Home} />
-          <Route exact path="/profile" component={Home} />
+          <Route exact path="/profile" component={GameDetail} />
           <Route exact path="/gamedetail" component={GameDetail} />
           {/*Default page if the user manually changes path*/}
           <Route component={Home} />
