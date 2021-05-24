@@ -36,6 +36,11 @@
     width: 152px;
     height: 152px;
     position: relative;
+    cursor: pointer;
+}
+
+.imageContainer:hover{
+    opacity: 92%;
 }
 
 .platformList{
