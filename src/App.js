@@ -17,10 +17,6 @@ import {
 import Home from "./Pages/Home"
 import GameDetail from "./Pages/GameDetail"
 
-/* NOTES */
-// Right now the default page goes to "/profile" due to something with
-// history in SideBar.js I believe.
-
 function App() {
   return (
     <div className="App">
