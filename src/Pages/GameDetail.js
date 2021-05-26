@@ -1,13 +1,6 @@
 import React from 'react';
 import ActivityRankCard from '../Components/ActivityRankCard'
 import ActivityHypeListCard from '../Components/ActivityHypeListCard'
-<<<<<<< Updated upstream
-
-const GameDetail = () => {
-  return (
-    <div className="GameDetail">
-      hi
-=======
 import './GameDetail.css'
 import Dropdown from '../Components/Dropdown'
 import HypeButton from '../Components/HypeButton'
@@ -118,7 +111,6 @@ const GameDetail = () => {
 
         </div>
       </div>
->>>>>>> Stashed changes
     </div>
   );
 };
