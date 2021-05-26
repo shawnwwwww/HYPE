@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Sidebar from './Components/Sidebar'
 import GameItem from './Components/GameItem'
+import React from 'react';
+
 
 
 import {
