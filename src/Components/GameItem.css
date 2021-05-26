@@ -12,9 +12,11 @@
     position: absolute;
     left: 0%;
     right: 32.89%;
-    top: 48px;
+    top: 50px;
     bottom: 0%;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    object-fit: cover;
+
     /* icon */
 
     filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.06)) 

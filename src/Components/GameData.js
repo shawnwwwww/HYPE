@@ -3,6 +3,15 @@ import React from 'react'
 
 export const GameData = [
     {
+        title: "Pokémon™ Brilliant Diamond", 
+        releaseDate: '11/19/2021', 
+        platform: ["Switch"],
+        digitalImage: 'https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero?v=2021052619', 
+        physicalImage: 'https://diamondpearl.pokemon.com/assets/img/global/en-us/packshot-d-2x.png',
+        bannerImage: 'https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero?v=2021052619',
+
+    },
+    {
         title: "Miitopia", 
         releaseDate: '5/21/2021', 
         platform: ["Switch"],
