@@ -14,7 +14,7 @@ export default function ActivityRankCard() {
                         <div className='coloredNumber one'>
                             <p className='coloredNumberText one'>1</p>
                         </div>
-                        <div className='gameHeader'>
+                        <div className='gameHeaderRank'>
                             <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'></img>
                             <p className='boldP'>Miitopia</p>
                         </div>
@@ -29,7 +29,7 @@ export default function ActivityRankCard() {
                         <div className='coloredNumber two'>
                             <p className='coloredNumberText two'>2</p>
                         </div>
-                        <div className='gameHeader'>
+                        <div className='gameHeaderRank'>
                             <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'></img>
                             <p className='boldP'>Miitopia</p>
                         </div>
@@ -44,7 +44,7 @@ export default function ActivityRankCard() {
                         <div className='coloredNumber three'>
                             <p className='coloredNumberText three'>3</p>
                         </div>
-                        <div className='gameHeader'>
+                        <div className='gameHeaderRank'>
                             <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'></img>
                             <p className='boldP'>Miitopia</p>
                         </div>

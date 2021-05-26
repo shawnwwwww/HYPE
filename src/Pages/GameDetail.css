@@ -1,6 +1,7 @@
 .pageContainer{
     padding: 80px 70px 120px 342px;
     width: 100vw;
+    max-width: 1614px;
 }
 
 .backNavContainer{
@@ -16,6 +17,10 @@
 .gameDetailCardContainer{
     grid-column: col-start / span 4;
 
+}
+
+.gameDetailSectionContainer h5{
+    margin-bottom: 10px;
 }
 
 .gameDetailCardContainer .hypeButton{
@@ -102,4 +107,35 @@
     grid-area: header;
     width: 115px;
     
+}
+
+.purchaseButtonGroup{
+    display: grid;
+    grid-template-columns: repeat(3, [col-start] 1fr);
+    column-gap: 26px;
+    row-gap: 16px;
+}
+
+.react-select-container{
+    margin-bottom: 20px;
+}
+
+.sectionContainer{
+    margin-bottom: 40px;
+}
+
+.screenshotArray{
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;    
+    display: grid;
+    grid-template-columns: repeat([col-start] 1fr) !important;
+    gap: 26px;
+}
+
+.screenshotItem{
+    grid-column-end: span 4;
+    grid-row: 1;
+    max-width: 300px;
+    border-radius: 4px;
 }

@@ -1,0 +1,27 @@
+.retailerLogo{
+    height: 22px;
+}
+
+.purchaseButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 200px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1.6px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0px 20px;
+}
+
+.purchaseButtonContainer{
+    grid-column: span 2;
+    display: flex;
+}
+
+#preorderBonus{
+    margin-top: 10px;
+    text-align: right;
+}

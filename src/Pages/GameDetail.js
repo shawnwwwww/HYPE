@@ -5,6 +5,8 @@ import './GameDetail.css'
 import Dropdown from '../Components/Dropdown'
 import HypeButton from '../Components/HypeButton'
 import GameData from '../Components/GameData'
+import PurchaseButton from '../Components/PurchaseButton'
+import Video from '../Components/Video'
 
 
 const GameDetail = () => {
@@ -59,11 +61,53 @@ const GameDetail = () => {
           
         </div>
         <div className='gameDetailSectionContainer'>
+          <div className='sectionContainer'>
             <h5>Purchase</h5>
             <div className='dropdownGroup'>
               <Dropdown isPlatform='true'/>
               <Dropdown isPlatform=''/>
             </div>
+            <div className='purchaseButtonGroup'>
+              {/* grid */}
+              <PurchaseButton retailer='amazon' preorderBonus={true}/>
+              <PurchaseButton retailer='bestbuy'/>
+              <PurchaseButton retailer='eshop'/>
+              <PurchaseButton retailer='target'/>
+
+
+            </div>
+          </div>
+
+          <div className='sectionContainer'>
+            <h5>Screenshot</h5>
+            <div className='screenshotArray'>
+              <img 
+                className='screenshotItem' 
+                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Customize_1_Wigs_SCRN.jpg'>
+              </img>
+              <img 
+                className='screenshotItem' 
+                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Customize_2_Roles_Cleric_SCRN.jpg'>
+              </img>
+              <img 
+                className='screenshotItem' 
+                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Improvements_4_Graphics_Dragon_SCRN.jpg'>
+              </img>
+
+            </div>
+          </div>
+
+          <div className='sectionContainer'>
+            <h5>Coverage</h5>
+            <div className='videoGroup'>
+              {/* grid */}
+              <Video 
+                title=''
+                uploader=''
+                coverImageURL=''
+                videoTime=''/>
+            </div>
+          </div>
 
         </div>
       </div>
