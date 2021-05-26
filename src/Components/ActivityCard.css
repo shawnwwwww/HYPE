@@ -95,7 +95,7 @@
     background: linear-gradient(180deg, #C5A26F 0%, #755E3D 100%);
 }
 
-.gameHeader{
+.numberHeader .gameHeaderRank{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -103,7 +103,7 @@
     
 }
 
-.gameHeader img{
+.numberHeader .gameHeaderRank img{
     height: 48px;
     width: 48px;
     border-radius: 6px;
