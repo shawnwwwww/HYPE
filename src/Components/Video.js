@@ -24,7 +24,7 @@ function Video(props) {
                     {props.uploader == 'IGN' ? <img 
                         className='uploaderLogo'
                         id='ignLogo' 
-                        src='../Resources/logo/ign.jpg'>
+                        src='/Resources/logo/ign.jpg'>
                     </img> : null}
                     <p>{props.uploader}</p>
                 </div>
