@@ -4,16 +4,40 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 18px;
-    background: rgba(222, 91, 255, 0.04);
-    border: 1px solid rgba(222, 91, 255, 0.5);
-    box-sizing: border-box;
     border-radius: 6px;
+    background:none;
+
+
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hypeButton :hover{
+    background: none;
 }
 
 .hypeButton{
     cursor: pointer;
 }
 
-.hypeButton :active{
-    background-color: red;
+
+.hypeButtonContainer{
+    background: rgba(222, 91, 255, 0.04);
+    border: 1px solid rgba(222, 91, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
+.hypeButtonContainer :hover{
+    background: rgba(222, 91, 255, 0.2);
+}
+
+.buttonText :hover{
+    background: white;
 }

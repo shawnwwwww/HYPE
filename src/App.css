@@ -192,16 +192,6 @@ button.textOnly{
   padding: 0;
 }
 
-.hypeButton{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 10px 18px;
-    border: 1px solid #DE5BFF;
-    box-sizing: border-box;
-    border-radius: 6px;
-}
 
 .hypeButton{
     cursor: pointer;

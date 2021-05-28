@@ -32,10 +32,14 @@ class HypeButton extends React.Component {
 
     render() {
         return (
-            <div className='hypeButton' onClick={this.handleClick}>
-                <p className='buttonText'>HYPE</p>
-                <p className='buttonText'>{this.convertHypes()}</p>
+            <div className='hypeButtonContainer'>
+                <div className='hypeButton' onClick={this.handleClick}>
+                    <p className='buttonText'>HYPE</p>
+                    <p className='buttonText'>{this.convertHypes()}</p>
+                </div>
+                
             </div>
+
         )
     }
 }
