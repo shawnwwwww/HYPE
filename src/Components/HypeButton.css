@@ -6,7 +6,7 @@
     padding: 10px 18px;
     border-radius: 6px;
     background:none;
-
+    transition: all 0.5s;
 
 
     -webkit-touch-callout: none;
@@ -17,14 +17,48 @@
     user-select: none;
 }
 
-.hypeButton :hover{
-    background: none;
-}
+
 
 .hypeButton{
     cursor: pointer;
 }
 
+.hypeButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.hypeButton:active span {
+    padding-right: 20px;
+}
+
+.hypeButton:active span:after {
+    content: '+1';
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.hypeButton:active span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.hypeButton :hover {
+    background: none;
+}
 
 .hypeButtonContainer{
     background: rgba(222, 91, 255, 0.04);
@@ -38,6 +72,7 @@
     background: rgba(222, 91, 255, 0.2);
 }
 
-.buttonText :hover{
-    background: white;
+.buttonText :hover {
+  background: rgba(222, 91, 255, 0.2);
+  transition: all 0.5s;
 }

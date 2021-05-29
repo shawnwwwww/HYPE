@@ -9,7 +9,7 @@ class HypeButton extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            hypes: 1
+            hypes: 2999
         }
   
         this.handleClick = this.handleClick.bind(this);
@@ -35,7 +35,7 @@ class HypeButton extends React.Component {
             <div className='hypeButtonContainer'>
                 <div className='hypeButton' onClick={this.handleClick}>
                     <p className='buttonText'>HYPE</p>
-                    <p className='buttonText'>{this.convertHypes()}</p>
+                    <span><p className='buttonText'>{this.convertHypes()}</p></span>
                 </div>
                 
             </div>
