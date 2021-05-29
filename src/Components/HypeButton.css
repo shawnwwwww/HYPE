@@ -73,6 +73,6 @@
 }
 
 .buttonText :hover {
-  background: rgba(222, 91, 255, 0.2);
-  transition: all 0.5s;
+    background: none;
+    transition: all 0.5s;
 }
