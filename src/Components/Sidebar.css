@@ -82,6 +82,7 @@
     align-items: center;
     
     width: auto;
+    cursor: pointer;
 }
 
 .UserProfile img{
