@@ -20,24 +20,25 @@ import Home from "./Pages/Home"
 import GameDetail from "./Pages/GameDetail"
 
 function App() {
-  return (
-    <div className="App">
+    return (
+        <div className="App">
       
-      <Router>
-        <Sidebar />
-        <Switch>
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/allreleases" component={Home} />
-          <Route exact path="/profile" component={GameDetail} />
-          <Route exact path="/gamedetail" component={GameDetail} />
-          {/*Default page if the user manually changes path*/}
-          <Route component={Home} />
-          <Redirect to="/home" />
-        </Switch>
-      </Router>
+        <Router>
+            <Switch>
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/allreleases" component={Home} />
+                <Route exact path="/profile" component={GameDetail} />
+                <Route exact path="/gamedetail" component={GameDetail} />
+                {/*Default page if the user manually changes path*/}
+                <Route component={Home} />
+                <Redirect to="/home" />
+            </Switch>
+
+            <Sidebar />
+        </Router>
       
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;
