@@ -1,0 +1,32 @@
+.signInModalContainer{
+    width: 84%;
+    max-width: 400px;
+    background: linear-gradient(180deg, #270E2E 0%, #DE5BFF 100%);
+    border: 1px solid #DE5BFF;
+    box-sizing: border-box;
+    box-shadow: 
+    0px 15px 295px #270E2E 
+    0px 6.26664px 123.244px rgba(39, 14, 46, 0.718854) 
+    0px 3.35045px 65.8921px rgba(39, 14, 46, 0.596107) 
+    0px 1.87823px 36.9386px rgba(39, 14, 46, 0.5) 
+    0px 0.997515px 19.6178px rgba(39, 14, 46, 0.403893) 
+    0px 0.415088px 8.16341px rgba(39, 14, 46, 0.281146);
+    border-radius: 30px;
+    padding: 26px 37px 46px;
+
+}
+
+.signInPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
