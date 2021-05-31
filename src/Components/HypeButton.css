@@ -1,4 +1,5 @@
 .hypeButton{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,6 +8,12 @@
     border-radius: 6px;
     background:none;
     transition: all 0.5s;
+
+    background: rgba(222, 91, 255, 0.04);
+    border: 1px solid rgba(222, 91, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 6px;
+    max-width: 260px;
 
 
     -webkit-touch-callout: none;
@@ -61,10 +68,7 @@
 }
 
 .hypeButtonContainer{
-    background: rgba(222, 91, 255, 0.04);
-    border: 1px solid rgba(222, 91, 255, 0.5);
-    box-sizing: border-box;
-    border-radius: 6px;
+
 }
 
 

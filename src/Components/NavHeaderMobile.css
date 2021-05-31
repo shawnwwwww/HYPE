@@ -1,0 +1,33 @@
+.navHeaderContainer{
+    display: none;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+/*breakpoint tablet*/
+@media (max-width: 768px) {
+    .navHeaderContainer{
+        display: grid;
+        grid-template-columns: repeat(3, [col-start] 1fr);
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+  
+}
+
+#userAvatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    margin-right: 17px;
+
+    border: 2px solid #DE5BFF;
+    /* active icon */
+
+    filter: drop-shadow(0px 18px 76px rgba(222, 91, 255, 0.86)) 
+    drop-shadow(0px 7.51997px 31.751px rgba(222, 91, 255, 0.618215)) 
+    drop-shadow(0px 4.02054px 16.9756px rgba(222, 91, 255, 0.512652)) 
+    drop-shadow(0px 2.25388px 9.51638px rgba(222, 91, 255, 0.43)) 
+    drop-shadow(0px 1.19702px 5.05408px rgba(222, 91, 255, 0.347348)) 
+    drop-shadow(0px 0.498106px 2.10311px rgba(222, 91, 255, 0.241785));
+}

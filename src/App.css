@@ -15,7 +15,7 @@
     grid-template-areas: 
     "sidebar appcontainer";
   }
-
+/* 1200 */
 }
 
 
@@ -34,7 +34,7 @@
 /*breakpoint tablet*/
 @media (max-width: 768px) {
   .AppContainer{
-    padding: 80px 70px 120px 70px;
+    padding: 40px 70px 120px 70px;
   }
 
 }
@@ -43,7 +43,9 @@
 /*breakpoint mobile*/
 @media (max-width: 480px) {
   .AppContainer{
-    padding: 80px 26px 120px 26px;
+    width: 100vw;
+    padding: 40px 26px 120px;
+    box-sizing: border-box;
   }
 
 }

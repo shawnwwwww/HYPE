@@ -28,9 +28,32 @@
 
 }
 /*breakpoint tablet*/
+@media (max-width: 1100px) {
+    #hypeListCard{
+        grid-column: col-start / span 10;
+        grid-row: 2;
+        min-width: 0;
+    }
+    #rankCard{
+        grid-column: col-start / span 10;
+        grid-row: 1;
+        min-width: 0;
+
+    }
+  
+}
+/*breakpoint tablet*/
 @media (max-width: 768px) {
     #hypeListCard{
+        grid-column: col-start / span 10;
         grid-row: 2;
+        min-width: 0;
+    }
+    #rankCard{
+        grid-column: col-start / span 10;
+        grid-row: 1;
+        min-width: 0;
+
     }
   
 }

@@ -4,6 +4,26 @@
     max-width: 1614px;
 }
 
+
+
+@media (max-width: 768px) {
+    .pageContainer{
+      padding: 80px 70px 120px 70px;
+    }
+  
+}
+
+@media (max-width: 1200px) {
+    .gameDetailPageContainer{
+        display: flex !important;
+        grid-template-columns: none !important;
+        flex-direction: column;
+    }
+  
+}
+
+
+
 .backNavContainer{
     margin-bottom: 16px;
 }
@@ -16,6 +36,13 @@
 
 .gameDetailCardContainer{
     grid-column: col-start / span 4;
+}
+
+/*breakpoint tablet*/
+@media (max-width: 1200) {
+    .gameDetailCardContainer{
+        grid-column: col-start / span 5 !important;
+    }
 
 }
 
@@ -49,6 +76,14 @@
 
 .gameDetailSectionContainer{
     grid-column: 5 / span 6;
+
+}
+
+/*breakpoint tablet*/
+@media (max-width: 1200) {
+    .gameDetailSectionContainer{
+        grid-column: 6 / span 2 !important;
+    }
 
 }
 

@@ -25,3 +25,12 @@
     margin-top: 10px;
     text-align: right;
 }
+
+.chevron-right{
+    width: 24px;
+    height: 24px;
+}
+
+.chevron{
+    color: white;
+}
