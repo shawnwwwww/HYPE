@@ -1,5 +1,7 @@
 import React from 'react';
 import './SignInModal.css'
+import { ReactComponent as CloseIcon } from './icons/x.svg';
+
 
 
 export const SignInModal = ({showModal, setShowModal}) => {
@@ -25,6 +27,7 @@ export const SignInModal = ({showModal, setShowModal}) => {
                                 {/* <img>
                                 </img> */}
                                 {/* <X color="#DE5BFF" size={24} /> */}
+                                <CloseIcon stroke='#DE5BFF'/>
                             </div>
                             
                         </div>
