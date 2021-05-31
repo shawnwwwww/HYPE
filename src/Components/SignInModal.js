@@ -1,6 +1,5 @@
 import React from 'react';
 import './SignInModal.css'
-import { X } from 'react-feather';
 
 
 export const SignInModal = ({showModal, setShowModal}) => {
@@ -25,7 +24,7 @@ export const SignInModal = ({showModal, setShowModal}) => {
                             <div className='closeIcon'>
                                 {/* <img>
                                 </img> */}
-                                <X color="#DE5BFF" size={24} />
+                                {/* <X color="#DE5BFF" size={24} /> */}
                             </div>
                             
                         </div>
