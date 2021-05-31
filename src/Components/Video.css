@@ -6,6 +6,13 @@
 
 }
 
+@media (max-width: 600px) {
+    .videoContainer{
+        grid-column: span 3;
+    }
+  
+}
+
 .videoTimeContainer{
     height: 100px;
     background-color: red;

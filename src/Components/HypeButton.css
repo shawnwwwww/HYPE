@@ -64,7 +64,7 @@
 }
 
 .hypeButton :hover {
-    background: none;
+    /* background: rgba(222, 91, 255, 1); */
 }
 
 .hypeButtonContainer{
@@ -73,10 +73,11 @@
 
 
 .hypeButtonContainer :hover{
-    background: rgba(222, 91, 255, 0.2);
+    /* this causes the text to have a bg as well */
+    /* background: rgba(222, 91, 255, 1); */
 }
 
 .buttonText :hover {
-    background: none;
+    background: red;
     transition: all 0.5s;
 }

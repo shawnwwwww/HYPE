@@ -106,6 +106,21 @@ const GameDetail = () => {
                 uploader='IGN'
                 coverImageURL='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Improvements_4_Graphics_Dragon_SCRN.jpg'
                 videoTime='1:32'/>
+              <Video 
+              title='Miitopia - Review'
+              uploader='IGN'
+              coverImageURL='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Improvements_4_Graphics_Dragon_SCRN.jpg'
+              videoTime='1:32'/>
+              <Video 
+              title='Miitopia - Review'
+              uploader='IGN'
+              coverImageURL='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Improvements_4_Graphics_Dragon_SCRN.jpg'
+              videoTime='1:32'/>
+              <Video 
+              title='Miitopia - Review'
+              uploader='IGN'
+              coverImageURL='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Improvements_4_Graphics_Dragon_SCRN.jpg'
+              videoTime='1:32'/>
             </div>
           </div>
 
