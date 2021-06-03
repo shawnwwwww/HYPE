@@ -38,12 +38,12 @@
 
 .hypeButton span[inFocus='1'] {
     position: relative;
-    animation: hypeNumAnimate 1s 1;
+    animation: hypeNumAnimate 0.7s 1;
 }
 
   .hypeButton span[inFocus='1']:after {
     content: attr(data); /* +1 OR -1 */
-    animation: hypeChangeAnimate 1s 1;
+    animation: hypeChangeAnimate 0.7s 1;
     top: 0; /* Keeps content in button area */
     position: absolute;
     right: 0; /* Shifts content into position, else too far on either side */
