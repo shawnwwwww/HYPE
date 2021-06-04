@@ -1,5 +1,5 @@
 import React from 'react';
-// import ProfileHypeItem from '../Components/ProfileHypeItem'
+import ProfileHypeItem from '../Components/ProfileHypeItem'
 import './Profile.css'
 // import Switch from '../Components/Switch'
 
@@ -33,11 +33,6 @@ const Profile = () => {
                 <h5>Your HYPE List</h5>
                 <div className='profileHypeItemGroup'>
                     {/* grid */}
-                    {/* <ProfileHypeItem 
-                        imageLink=''
-                        title='Miitopia'
-                        releaseDate='5/21/2021'
-                    />
                     <ProfileHypeItem 
                         imageLink=''
                         title='Miitopia'
@@ -57,7 +52,12 @@ const Profile = () => {
                         imageLink=''
                         title='Miitopia'
                         releaseDate='5/21/2021'
-                    /> */}
+                    />
+                    <ProfileHypeItem 
+                        imageLink=''
+                        title='Miitopia'
+                        releaseDate='5/21/2021'
+                    />
                 </div>
             </div>
 
