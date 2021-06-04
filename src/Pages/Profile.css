@@ -2,10 +2,63 @@
     padding: 80px 70px 120px 342px;
     width: 100vw;
     max-width: 1614px;
+
+    display: grid;
+    grid-template-columns: repeat(10, [col-start] 1fr);
+    gap: 40px;
 }
 
 .profileHypeItemGroup{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(6, [col-start] 1fr);
     gap: 26px;    
+}
+
+.profilePageHeader{
+    grid-column: span 4;
+
+}
+
+.profileHypeList{
+    grid-column: span 6;
+
+}
+
+.preferenceContainer{
+    margin-top: 20px;
+}
+.preferenceContainer #header{
+    margin-bottom: 20px;
+}
+
+.preferenceSettings{
+    list-style-type: none;
+    padding: 0;
+}
+.preferenceSettings li{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.profileHeader h1{
+    display: inline;
+}
+
+.profileHeader #userAvatar{
+    width: 58px;
+    height: 58px;
+}
+
+.profileHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
 }
