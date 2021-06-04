@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileHypeItem from '../Components/ProfileHypeItem'
 import './Profile.css'
-// import Switch from '../Components/Switch'
+import Switch from '../Components/Switch'
 
 
 const Profile = () => {
@@ -19,7 +19,7 @@ const Profile = () => {
                         <ul className='preferenceSettings'>
                             <li>
                                 <p>On release day</p>
-                                {/* <Switch /> */}
+                                <Switch />
                             </li>
                             <li>
                                 <p>One week before release</p>
