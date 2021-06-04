@@ -1,0 +1,11 @@
+.profilePageContainer{
+    padding: 80px 70px 120px 342px;
+    width: 100vw;
+    max-width: 1614px;
+}
+
+.profileHypeItemGroup{
+    display: grid;
+    grid-template-columns: repeat(6, [col-start] 1fr);
+    gap: 26px;    
+}
