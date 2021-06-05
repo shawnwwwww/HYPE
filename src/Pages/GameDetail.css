@@ -13,6 +13,13 @@
   
 }
 
+@media (max-width: 480) {
+    .pageContainer{
+        padding: 40px 26px 120px;
+    }
+  
+}
+
 @media (max-width: 1200px) {
     .gameDetailPageContainer{
         display: flex !important;

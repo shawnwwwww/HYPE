@@ -8,10 +8,37 @@
     gap: 40px;
 }
 
+@media (max-width: 960px) {
+    .profilePageHeader{
+        grid-column: span 10 !important;
+    
+    }
+    .profileHypeList{
+        grid-column: span 10 !important;
+        grid-row: 2;
+    }
+  
+}
+
+@media (max-width: 768px) {
+    .profilePageContainer{
+      padding: 80px 70px 120px 70px;
+    }
+  
+}
+
+@media (max-width: 480) {
+    .profilePageContainer{
+        padding: 40px 26px 120px;
+    }
+  
+}
+
 .profileHypeItemGroup{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(6, [col-start] 1fr);
+    /* grid-template-columns: repeat(6, [col-start] 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 26px;    
 }
 

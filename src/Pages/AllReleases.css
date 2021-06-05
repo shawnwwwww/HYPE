@@ -3,3 +3,17 @@
     width: 100vw;
     max-width: 1614px;
 }
+
+@media (max-width: 768px) {
+    .pageContainer{
+      padding: 80px 70px 120px 70px;
+    }
+  
+}
+
+@media (max-width: 480) {
+    .pageContainer{
+        padding: 40px 26px 120px;
+    }
+  
+}

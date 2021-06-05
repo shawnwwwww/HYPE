@@ -21,7 +21,7 @@ function Sidebar() {
     return (
         <div className='Sidebar'>
             <div>
-                <h1>HYPE</h1>
+                <h1 id='companyName'>HYPE</h1>
                 <ul className='SidebarList'>
                     {SidebarData.map((val, key) => {
                         return (

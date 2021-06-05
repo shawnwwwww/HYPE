@@ -110,7 +110,82 @@
 /*breakpoint tablet*/
 @media (max-width: 768px) {
     .Sidebar{
+        height: auto;
+        max-width: 336px;
+        background: #270E2E;        
+        padding: 21px 45px;
+        /* grid-area: sidebar;  */
+        box-sizing: border-box;
+        
+        box-shadow: 0px -85px 154px rgba(222, 91, 255, 0.26), 0px -35.511px 64.3375px rgba(222, 91, 255, 0.186902), 0px -18.9859px 34.3979px rgba(222, 91, 255, 0.154988), 0px -10.6433px 19.2832px rgba(222, 91, 255, 0.13), 0px -5.65259px 10.2412px rgba(222, 91, 255, 0.105012), 0px -2.35217px 4.26158px rgba(222, 91, 255, 0.0730979);
+        position: fixed;
+
+        bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #DE5BFF;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .UserProfile{
         display: none;
     }
+
+    #title{
+        display: none;
+    }
+
+    #companyName{
+        display: none;
+    }
+
+    .SidebarList{
+        padding: 0px;
+        margin: 0 0 0 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    
+    .SidebarList .row{
+        width: auto;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        color: rgba(222, 91, 255, 0.4);
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        box-sizing: border-box;
+        flex-shrink: 0;
+
+    }
+
+    .row #icon{
+        width: 24px;
+        height: 24px;
+        margin-right: 0;
+        /*Figma*/
+        filter: drop-shadow(0px 18px 76px rgba(222, 91, 255, 0.86))
+        drop-shadow(0px 7.52px 31.65px rgba(222, 91, 255, 0.6182))
+        drop-shadow(0px 4.02px 16.98px rgba(222, 91, 255, 0.5127))
+        drop-shadow(0px 2.25px 9.52px rgba(222, 91, 255, 0.43)) 
+        drop-shadow(0px 1.2px 5.05px rgba(222, 91, 255, 0.3473))
+        drop-shadow(0px 0.5px 2.1px rgba(222, 91, 255, 0.2418));
+        
+        
+        /*not working
+        filter: drop-shadow(0px 18px 76px rgba(222, 91, 255, 0.86)), 
+        drop-shadow(0px 7.52px 31.75px rgba(222, 91, 255, 0.61)), 
+        drop-shadow(0px 4.02px 16.97px rgba(222, 91, 255, 0.51)), 
+        drop-shadow(0px 2.25px 9.51px rgba(222, 91, 255, 0.43)), 
+        drop-shadow(0px 1.19px 5.05px rgba(222, 91, 255, 0.34)), 
+        drop-shadow(0px 0.49px 2.10px rgba(222, 91, 255, 0.24));
+        */
+    }
+
   
   }
