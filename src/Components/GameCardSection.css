@@ -1,6 +1,12 @@
+.gridContainer{
+    width: 100% !important;
+    grid-template-columns: repeat(10, [col-start] 1fr);
+}
+
 .gameCardContainer{
     display: grid;
-    grid-template-columns: repeat([col-start] 1fr);
+    /* grid-template-columns: repeat([col-start] 1fr); */
+    /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
     gap: 26px;
     margin-bottom: 50px;
     width: 100%;
@@ -10,15 +16,45 @@
     scroll-snap-type: x proximity;
 }
 
-.gridContainer{
-    width: 100% !important;
-    grid-template-columns: repeat(10, [col-start] 1fr);
-}
 
 .gameItem{
-    grid-column-end: span 2;
+    /* grid-column-end: span 2; */
     min-width: 152px;
     grid-row: 1;
+}
+
+.gridContainerAllreleases{
+    display: grid;
+    /* grid-template-columns: repeat([col-start] 1fr); */
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+    gap: 26px;
+    margin-bottom: 50px;
+    width: 100%;
+
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.gameItemAllreleases{
+    /* grid-column-end: span 2; */
+    min-width: 152px;
+    /* grid-row: 1; */
+
+}
+
+.gameCardContainerAllreleases{
+    display: grid;
+    /* grid-template-columns: repeat([col-start] 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
+    gap: 26px;
+    margin-bottom: 50px;
+    width: 100%;
+
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
 }
 
 .sectionContainer{

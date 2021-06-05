@@ -17,26 +17,54 @@ function GameCardSection(props) {
                 </div>
             </div>
 
-            <div className='gridContainer'>
-                <div className='gameCardContainer'>
-                    {GameData.map((val, key) => {
-                        return (
-                            <div className='gameItem' key={key}>
-                                <GameItem 
-                                physicalImage={val.physicalImage}
-                                digitalImage={val.digitalImage} 
-                                title={val.title}
-                                releaseDate={val.releaseDate}
-                                platform={val.platform}/>
-                            </div>
-                        )
-                    })}
-                {/* grid */}
+            {props.type === 'section' ?
+                <div className='gridContainer'>
+                    <div className='gameCardContainer'>
+                        {GameData.map((val, key) => {
+                            return (
+                                <div className='gameItem' key={key}>
+                                    <GameItem 
+                                    physicalImage={val.physicalImage}
+                                    digitalImage={val.digitalImage} 
+                                    title={val.title}
+                                    releaseDate={val.releaseDate}
+                                    platform={val.platform}/>
+                                </div>
+                            )
+                        })}
+                    {/* grid */}
+                    </div>
                 </div>
-            </div>
+            :null}
+
+            {props.type === 'allReleases' ?
+                <div className='gridContainerAllreleases'>
+                    <div className='gameCardContainerAllreleases'>
+                        {GameData.map((val, key) => {
+                            return (
+                                <div className='gameItemAllreleases' key={key}>
+                                    <GameItem 
+                                    physicalImage={val.physicalImage}
+                                    digitalImage={val.digitalImage} 
+                                    title={val.title}
+                                    releaseDate={val.releaseDate}
+                                    platform={val.platform}/>
+                                </div>
+                            )
+                        })}
+                    {/* grid */}
+                    </div>
+                </div>
+            :null}
+
+
+            
+
             
             
         </div>
+
+        
     )
 }
 

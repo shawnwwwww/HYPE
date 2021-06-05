@@ -14,9 +14,9 @@ const Home = () => {
           <ActivityRankCard />
           <ActivityHypeListCard />
         </div>
-        <GameCardSection  title='RELEASING SOON'/>
-        <GameCardSection  title='Indie ALLSTARS'/>
-        <GameCardSection  title='TOP HITS'/>
+        <GameCardSection  title='RELEASING SOON' type='section'/>
+        <GameCardSection  title='Indie ALLSTARS' type='section'/>
+        <GameCardSection  title='TOP HITS' type='section'/>
       </div>
 
     </div>
