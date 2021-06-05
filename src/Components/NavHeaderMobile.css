@@ -24,10 +24,7 @@
     border: 2px solid #DE5BFF;
     /* active icon */
 
-    filter: drop-shadow(0px 18px 76px rgba(222, 91, 255, 0.86)) 
-    drop-shadow(0px 7.51997px 31.751px rgba(222, 91, 255, 0.618215)) 
-    drop-shadow(0px 4.02054px 16.9756px rgba(222, 91, 255, 0.512652)) 
-    drop-shadow(0px 2.25388px 9.51638px rgba(222, 91, 255, 0.43)) 
-    drop-shadow(0px 1.19702px 5.05408px rgba(222, 91, 255, 0.347348)) 
-    drop-shadow(0px 0.498106px 2.10311px rgba(222, 91, 255, 0.241785));
+    filter: drop-shadow(0px 9px 45px #DE5BFF) 
+    drop-shadow(0px 2.01027px 10.0513px rgba(222, 91, 255, 0.596107)) 
+    drop-shadow(0px 0.598509px 2.99255px rgba(222, 91, 255, 0.403893));
 }

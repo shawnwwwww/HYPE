@@ -26,7 +26,8 @@ export const GameData = [
         digitalImage: 'https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$native$', 
         physicalImage: '/Resources/images/riftapart.png',
         
-    },    {
+    },
+    {
         title: "Ratchet and Clank: Rift Apart", 
         releaseDate: '6/11/2021', 
         platform: ["PS5", "PS4"],

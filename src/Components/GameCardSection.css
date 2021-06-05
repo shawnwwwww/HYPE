@@ -14,7 +14,14 @@
 
     overflow-x: scroll;
     scroll-snap-type: x proximity;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+.gameCardContainer::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 .gameItem{

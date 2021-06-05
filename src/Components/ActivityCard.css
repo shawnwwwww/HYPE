@@ -82,7 +82,13 @@
     overflow-x: scroll;
     scroll-snap-type: x proximity;
     padding-bottom: 13px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+.previewContainer::-webkit-scrollbar {
+    display: none;
+  }
 
 .coloredNumber{
     width: 24px;

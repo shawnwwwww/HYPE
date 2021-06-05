@@ -2,6 +2,11 @@
     padding: 80px 70px 120px 342px;
     width: 100vw;
     max-width: 1614px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 
@@ -153,9 +158,10 @@
 
 .purchaseButtonGroup{
     display: grid;
-    grid-template-columns: repeat(3, [col-start] 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     column-gap: 26px;
     row-gap: 16px;
+
 }
 
 .react-select-container{
@@ -173,6 +179,12 @@
     display: grid;
     grid-template-columns: repeat([col-start] 1fr) !important;
     gap: 26px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.screenshotArray::-webkit-scrollbar {
+    display: none;
 }
 
 .screenshotItem{
