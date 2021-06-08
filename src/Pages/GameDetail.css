@@ -18,7 +18,7 @@
   
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
     .pageContainer{
         padding: 40px 26px 120px;
     }
@@ -138,6 +138,28 @@
     justify-self: right;
     grid-area: image;
 
+}
+
+@media (max-width: 380px) {
+    .gameImage{
+        width: 80% !important;
+        /* height: 80% !important; */
+        height: auto !important;
+    }
+
+    .gameDetailInfoContainer{
+        grid-column-gap: 20px;
+    }
+
+    .gameHeader{
+        grid-column-gap: 20px !important;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+  
+    .gameTitleHeader{
+        width: auto !important;
+    }
 }
 
 .gameHeader{
