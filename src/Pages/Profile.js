@@ -2,6 +2,7 @@ import React from 'react';
 import ProfileHypeItem from '../Components/ProfileHypeItem'
 import './Profile.css'
 import Switch from '../Components/Switch'
+import Button from '../Components/Button'
 
 
 const Profile = () => {
@@ -41,6 +42,8 @@ const Profile = () => {
 
                         </ul>           
                     </div>
+
+                    <Button id='signOutButton' buttonText='SIGN OUT'/>
                 </div>
             </div>
             <div className='profileHypeList'>
