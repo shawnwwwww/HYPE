@@ -11,9 +11,9 @@
   
 }
 
-@media (max-width: 480) {
+
+@media (max-width: 480px) {
     .pageContainer{
-        padding: 40px 26px 120px;
+        padding: 80px 26px 120px 26px;
     }
-  
 }

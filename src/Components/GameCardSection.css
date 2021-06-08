@@ -44,9 +44,40 @@
     scroll-snap-type: x proximity;
 }
 
+@media (max-width: 375px) {
+    .gridContainerAllreleases{
+        /* grid-template-columns: repeat(2, [col-start] 1fr); */
+        /* grid-template-columns: repeat(auto-fit, minmax(0px, 120px)); */
+    }
+    .gameCardContainerAllreleases{
+        /* grid-column: span 1; */
+        grid-template-columns: repeat(auto-fit, minmax(0px, 140px)) !important;
+        gap: 20px !important;
+
+
+    }
+    .gameItemAllreleases{
+        min-width: 20px !important;
+
+    }
+  
+}
+
+@media (max-width: 350px) {
+
+    .gameCardContainerAllreleases{
+        /* grid-column: span 1; */
+        grid-template-columns: repeat(auto-fit, minmax(0px, 124px)) !important;
+        /* gap: 20px !important; */
+
+
+    }
+  
+}
+
 .gameItemAllreleases{
     /* grid-column-end: span 2; */
-    min-width: 152px;
+    min-width: 120px;
     /* grid-row: 1; */
 
 }

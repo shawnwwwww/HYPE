@@ -28,13 +28,15 @@
 @media (max-width: 768px) {
     .profilePageContainer{
       padding: 80px 70px 120px 70px;
+      display: flex;
+      flex-direction: column;
     }
   
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
     .profilePageContainer{
-        padding: 40px 26px 120px;
+        padding: 80px 26px 120px;
     }
   
 }
