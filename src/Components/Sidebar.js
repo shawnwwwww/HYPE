@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Sidebar.css';
 import { SidebarData } from './SidebarData';
-import { Redirect, useHistory, withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { SignInModal } from './SignInModal';
 
 

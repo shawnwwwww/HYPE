@@ -1,10 +1,7 @@
 import React from 'react';
-import ActivityRankCard from '../Components/ActivityRankCard'
-import ActivityHypeListCard from '../Components/ActivityHypeListCard'
 import './GameDetail.css'
 import Dropdown from '../Components/Dropdown'
 import HypeButton from '../Components/HypeButton'
-import GameData from '../Components/GameData'
 import PurchaseButton from '../Components/PurchaseButton'
 import Video from '../Components/Video'
 

@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
-    "\\src\\Components",
-    "\\src\\Pages"
+    "\\src\\Components"
   ],
-  "SelectedNode": "\\src\\Components\\ActivityRankCard.js",
+  "SelectedNode": "\\src\\index.css",
   "PreviewInSolutionExplorer": false
 }

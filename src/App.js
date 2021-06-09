@@ -7,9 +7,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
-  Redirect,
-  withRouter
+  Redirect
 } from "react-router-dom"
 
 // Pages

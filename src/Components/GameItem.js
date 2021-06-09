@@ -1,8 +1,7 @@
 import React from 'react'
 import './GameItem.css'
 import HypeButton from './HypeButton'
-import { Redirect, useHistory, Link } from 'react-router-dom';
-import GameDetail from '../Pages/GameDetail';
+import { useHistory, Link } from 'react-router-dom';
 
 
 function GameItem({ physicalImage, digitalImage, title, releaseDate, platform }) {

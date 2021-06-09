@@ -53,11 +53,11 @@ class HypeButton extends React.Component {
                     onClick={this.handleClick}
                 >
 
-                    <p className='buttonText' inFocus='0'>
+                    <p className='buttonText' infocus='0'>
                         {this.state.isHyped ? 'HYPED' : 'HYPE'}
                     </p>
 
-                    <span inFocus={this.state.inFocus}
+                    <span infocus={this.state.inFocus}
                         data={this.state.isHyped ? '+1' : '-1'}
                         onAnimationEnd={() => this.handleAnimationEnd()}
                     >

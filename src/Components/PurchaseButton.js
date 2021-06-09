@@ -27,27 +27,27 @@ function PurchaseButton(props) {
     return (
         <div className='purchaseButtonConatiner'>
             <div className='purchaseButton'>
-                {props.retailer == 'amazon' ? <img 
+                {props.retailer === 'amazon' ? <img 
                         className='retailerLogo'
                         id='amazonLogo' 
                         src='/Resources/logo/amazon.png'>
                     </img> : null}
-                {props.retailer == 'bestbuy' ? <img 
+                {props.retailer === 'bestbuy' ? <img 
                     className='retailerLogo'
                     id='bestbuyLogo' 
                     src='/Resources/logo/bestbuy.png'>
                 </img> : null}
-                {props.retailer == 'eshop' ? <img 
+                {props.retailer === 'eshop' ? <img 
                     className='retailerLogo'
                     id='eshopLogo' 
                     src='/Resources/logo/eshop.png'>
                 </img> : null}
-                {props.retailer == 'target' ? <img 
+                {props.retailer === 'target' ? <img 
                     className='retailerLogo'
                     id='targetLogo' 
                     src='/Resources/logo/target.png'>
                 </img> : null}
-                {props.retailer == 'gamestop' ? <img 
+                {props.retailer === 'gamestop' ? <img 
                     className='retailerLogo'
                     id='gamestopLogo' 
                     src='/Resources/logo/gamestop.png'>
