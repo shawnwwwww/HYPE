@@ -4,9 +4,14 @@ import Dropdown from '../Components/Dropdown'
 import HypeButton from '../Components/HypeButton'
 import PurchaseButton from '../Components/PurchaseButton'
 import Video from '../Components/Video'
+import { useLocation } from "react-router-dom";
 
+// Receives:
+// switch_img_self_link, img_self_link, game_title, release_date, platforms
 
 const GameDetail = () => {
+    const location = useLocation();
+
   return (
     <div className="pageContainer">
       <div className='backNavContainer'>
@@ -20,13 +25,13 @@ const GameDetail = () => {
             <div className='gameHeader'>
               <img 
                 className='gameImage'
-                src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'
-                alt="Miitopia Cover">
+                src={location.state.img_self_link}
+                alt="{location.state.title} Cover">
 
               </img>
               <div className='gameTitleHeader'>
                 <p>Nintendo</p>
-                <p className='titleP'>Miitopia</p>
+                <p className='titleP'>{location.state.game_title}</p>
               </div>
 
             </div>
@@ -37,10 +42,10 @@ const GameDetail = () => {
               {/* make it a grid */}
 
               <p className='textRightAligned'>Release Date</p>
-              <p>5/21/2021</p>
+              <p>{location.state.release_date}</p>
 
               <p className='textRightAligned'>Platform</p>
-              <p>Switch</p>
+                <p>{location.state.platforms}</p>
 
               <p className='textRightAligned'>Metacritics</p>
               <div className='metacritics'>
