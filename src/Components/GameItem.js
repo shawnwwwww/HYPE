@@ -4,7 +4,7 @@ import HypeButton from './HypeButton'
 import { useHistory, Link } from 'react-router-dom';
 
 
-function GameItem({ physicalImage, digitalImage, title, releaseDate, platform }) {
+function GameItem({ switch_img_self_link, img_self_link, game_title, release_date, platforms }) {
     const history = useHistory();
 
     const handleOnClick = () => {
@@ -15,21 +15,21 @@ function GameItem({ physicalImage, digitalImage, title, releaseDate, platform })
         <div className='card'>
             <div className='GameInfo'>          
                 <div className='imageContainer' onClick={() => handleOnClick()}> 
-                    <img className='physicalImage' src={physicalImage}></img>
-                    <img className='digitalImage' src={digitalImage}></img>
+                    <img className='physicalImage' src={switch_img_self_link}></img>
+                    <img className='digitalImage' src={img_self_link}></img>
                 </div>
                 <div className='platformList'>
                     {
-                        platform.map((platform, i) =>
+                        platforms.map((platforms, i) =>
                             <div className='platformIcon' key={i}>
-                                <p className='boldCaption'>{platform}</p>
+                                <p className='boldCaption'>{platforms}</p>
                             </div>
                         )
                     }
                 </div>
                 <div className='titleAndDate'>
-                    <p className='titleP'>{ <Link to='/gamedetail'>{title}</Link> }</p>
-                    <p className='caption'>{releaseDate}</p>
+                    <p className='titleP'>{ <Link to='/gamedetail'>{game_title}</Link> }</p>
+                    <p className='caption'>{release_date}</p>
                 </div>
             </div>
             <HypeButton />
