@@ -24,11 +24,11 @@ function GameCardSection(props) {
                             return (
                                 <div className='gameItem' key={key}>
                                     <GameItem 
-                                    physicalImage={val.physicalImage}
-                                    digitalImage={val.digitalImage} 
-                                    title={val.title}
-                                    releaseDate={val.releaseDate}
-                                    platform={val.platform}/>
+                                    switch_img_self_link={val.switch_img_self_link}
+                                    img_self_link={val.img_self_link} 
+                                    game_title={val.game_title}
+                                    release_date={val.release_date}
+                                    platforms={val.platforms}/>
                                 </div>
                             )
                         })}
@@ -44,11 +44,11 @@ function GameCardSection(props) {
                             return (
                                 <div className='gameItemAllreleases' key={key}>
                                     <GameItem 
-                                    physicalImage={val.physicalImage}
-                                    digitalImage={val.digitalImage} 
-                                    title={val.title}
-                                    releaseDate={val.releaseDate}
-                                    platform={val.platform}/>
+                                    switch_img_self_link={val.switch_img_self_link}
+                                    img_self_link={val.img_self_link} 
+                                    game_title={val.game_title}
+                                    release_date={val.release_date}
+                                    platforms={val.platforms}/>
                                 </div>
                             )
                         })}
@@ -69,7 +69,7 @@ function GameCardSection(props) {
 }
 
 GameCardSection.defaultProps = {
-    title: 'Title',
+    game_title: 'Title',
 }
 
 export default GameCardSection
