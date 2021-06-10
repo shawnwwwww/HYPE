@@ -30,27 +30,32 @@ function PurchaseButton(props) {
                 {props.retailer === 'amazon' ? <img 
                         className='retailerLogo'
                         id='amazonLogo' 
-                        src='/Resources/logo/amazon.png'>
+                        src='/Resources/logo/amazon.png'
+                        alt="Amazon Logo">
                     </img> : null}
                 {props.retailer === 'bestbuy' ? <img 
                     className='retailerLogo'
                     id='bestbuyLogo' 
-                    src='/Resources/logo/bestbuy.png'>
+                    src='/Resources/logo/bestbuy.png'
+                    alt="Best Buy Logo">
                 </img> : null}
                 {props.retailer === 'eshop' ? <img 
                     className='retailerLogo'
                     id='eshopLogo' 
-                    src='/Resources/logo/eshop.png'>
+                    src='/Resources/logo/eshop.png'
+                    alt="Nintendo eShop Logo">
                 </img> : null}
                 {props.retailer === 'target' ? <img 
                     className='retailerLogo'
                     id='targetLogo' 
-                    src='/Resources/logo/target.png'>
+                    src='/Resources/logo/target.png'
+                    alt="Target Logo">
                 </img> : null}
                 {props.retailer === 'gamestop' ? <img 
                     className='retailerLogo'
                     id='gamestopLogo' 
-                    src='/Resources/logo/gamestop.png'>
+                    src='/Resources/logo/gamestop.png'
+                    alt="GameStop Logo">
                 </img> : null}
 
                 {/* <p id='arrowIcon'>></p> */}

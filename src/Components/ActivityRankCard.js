@@ -31,7 +31,7 @@ export default class ActivityRankCard extends React.Component {
                             <p className='coloredNumberText'>1</p>
                         </div>
                         <div className='gameHeaderRank'>
-                            <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'></img>
+                            <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg' alt="Miitopia"></img>
                             <p className='boldP'>Miitopia</p>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ export default class ActivityRankCard extends React.Component {
                             <p className='coloredNumberText'>2</p>
                         </div>
                         <div className='gameHeaderRank'>
-                            <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'></img>
+                            <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg' alt="Miitopia"></img>
                             <p className='boldP'>Miitopia</p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default class ActivityRankCard extends React.Component {
                             <p className='coloredNumberText'>3</p>
                         </div>
                         <div className='gameHeaderRank'>
-                            <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'></img>
+                            <img src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg' alt="Miitopia"></img>
                             <p className='boldP'>Miitopia</p>
                         </div>
                     </div>

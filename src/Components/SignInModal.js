@@ -65,7 +65,7 @@ export const SignInModal = ({showModal, setShowModal}) => {
                         <div className='signInButtonGroup'>
                             <div className='signInButton'>
                                 <img className='signInLogo' id='googleIcon'
-                                src='/Resources/logo/google.png'></img>
+                                src='/Resources/logo/google.png' alt="Google Icon"></img>
                                 <p className='buttonText' id='googleButtonText'>Continue with Google</p>
                             </div>
                         </div>

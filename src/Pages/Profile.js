@@ -11,7 +11,7 @@ const Profile = () => {
         <div className='profilePageContainer'>
             <div className='profilePageHeader'>
                 <div className='profileHeader'>
-                    <img id='userAvatar' src='https://i.pinimg.com/564x/e5/4f/f1/e54ff1eafb5340f6c2ac57a720f4180f.jpg'></img>
+                    <img id='userAvatar' src='https://i.pinimg.com/564x/e5/4f/f1/e54ff1eafb5340f6c2ac57a720f4180f.jpg' alt="User Avatar"></img>
                     <h1>Nathan</h1>
                 </div>
                 <div className='hypePreference'>

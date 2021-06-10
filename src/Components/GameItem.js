@@ -15,8 +15,8 @@ function GameItem({ physicalImage, digitalImage, title, releaseDate, platform })
         <div className='card'>
             <div className='GameInfo'>          
                 <div className='imageContainer' onClick={() => handleOnClick()}> 
-                    <img className='physicalImage' src={physicalImage}></img>
-                    <img className='digitalImage' src={digitalImage}></img>
+                    <img className='physicalImage' src={physicalImage} alt="Physical copy of {title}"></img>
+                    <img className='digitalImage' src={digitalImage} alt="Digital copy of {title}"></img>
                 </div>
                 <div className='platformList'>
                     {

@@ -7,7 +7,7 @@ function Button(props) {
         <div className='buttonContainer' id={props.id}>
 
             <p className='buttonText' id='buttonTextID'>{props.buttonText}</p>
-            <img id='buttonIconID'></img>
+            <img id='buttonIconID' alt={props.buttonText}></img>
 
         </div>
     )

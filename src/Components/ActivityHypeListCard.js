@@ -20,7 +20,7 @@ export default function ActivityHypeListCard() {
                 {GameData.map((val, key) => {
                     return (
                         <div className='gamePreview compact' key={key}>
-                            <img src={val.digitalImage}></img>
+                            <img src={val.digitalImage} alt={val.title}></img>
                             <p className='caption' id='previewTitle'>{val.title}</p>
                             <p className='caption'>{val.releaseDate}</p>
                         </div>

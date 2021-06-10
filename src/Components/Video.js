@@ -10,6 +10,7 @@ function Video(props) {
                     <img 
                         className='videoCover'
                         src={props.coverImageURL}
+                        alt="Video Still"
                         >
                     </img>
                 </div>
@@ -24,7 +25,8 @@ function Video(props) {
                     {props.uploader === 'IGN' ? <img 
                         className='uploaderLogo'
                         id='ignLogo' 
-                        src='/Resources/logo/ign.jpg'>
+                        src='/Resources/logo/ign.jpg'
+                        alt="IGN Logo">
                     </img> : null}
                     <p>{props.uploader}</p>
                 </div>

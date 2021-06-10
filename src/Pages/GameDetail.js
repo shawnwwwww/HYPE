@@ -20,7 +20,8 @@ const GameDetail = () => {
             <div className='gameHeader'>
               <img 
                 className='gameImage'
-                src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'>
+                src='https://upload.wikimedia.org/wikipedia/en/7/77/Miitopia_3DS.jpg'
+                alt="Miitopia Cover">
 
               </img>
               <div className='gameTitleHeader'>
@@ -54,7 +55,7 @@ const GameDetail = () => {
 
             </div>
           </div>
-          <HypeButton className='ypeButton'/>
+          <HypeButton className='hypeButton'/>
           
         </div>
         <div className='gameDetailSectionContainer'>
@@ -80,15 +81,18 @@ const GameDetail = () => {
             <div className='screenshotArray'>
               <img 
                 className='screenshotItem' 
-                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Customize_1_Wigs_SCRN.jpg'>
+                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Customize_1_Wigs_SCRN.jpg'
+                alt="Miitopia Game Capture">
               </img>
               <img 
                 className='screenshotItem' 
-                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Customize_2_Roles_Cleric_SCRN.jpg'>
+                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Customize_2_Roles_Cleric_SCRN.jpg'
+                alt="Miitopia Game Capture">
               </img>
               <img 
                 className='screenshotItem' 
-                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Improvements_4_Graphics_Dragon_SCRN.jpg'>
+                src='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Improvements_4_Graphics_Dragon_SCRN.jpg'
+                alt="Miitopia Game Capture">
               </img>
 
             </div>
