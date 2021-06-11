@@ -47,16 +47,18 @@ const GameDetail = () => {
               <p className='textRightAligned'>Platform</p>
                 <p>{location.state.platforms}</p>
 
-              <p className='textRightAligned'>Metacritics</p>
+              {/* <p className='textRightAligned'>Metacritics</p>
               <div className='metacritics'>
                 <p>82</p>
-              </div>
+              </div> */}
 
               <p className='textRightAligned'>MSRP</p>
               <p>$49.99</p>
 
               <p className='textRightAligned'>Developer</p>
               <p>Nintendo</p>
+              {/* <p>{location.state.platforms}</p> */}
+
 
             </div>
           </div>

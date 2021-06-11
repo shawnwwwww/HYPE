@@ -3,6 +3,11 @@ import './Sidebar.css';
 import { SidebarData } from './SidebarData';
 import { useHistory } from 'react-router-dom';
 import { SignInModal } from './SignInModal';
+import { NavLink } from 'react-router-dom';
+import { ReactComponent as HomeIcon } from './icons/home.svg';
+import { ReactComponent as AllReleasesIcon } from './icons/allreleases.svg';
+import { ReactComponent as ProfileIcon } from './icons/profile.svg';
+
 
 
 function Sidebar() {
@@ -23,15 +28,33 @@ function Sidebar() {
             <div>
                 <h1 id='companyName'>HYPE</h1>
                 <ul className='SidebarList'>
-                    {SidebarData.map((val, key) => {
+                    {/* {SidebarData.map((val, key) => {
                         return (
-                          <li className='row' id={val.link ? "active" : ""} key={key} onClick={() => handleOnClick(val.link)}> 
+                          <li className='row' id={window.location.pathname == val.link ? "active" : ""} key={key} onClick={() => handleOnClick(val.link)}> 
                             {""}
                                 <div id='icon'>{val.icon}</div> {""}
                                 <h6 id='title'>{val.title}</h6>
                           </li>
                         )
-                    })}
+                    })} */}
+                    <li>
+                      <NavLink to="/" exact className='row' activeClassName="selected">
+                        <HomeIcon id='icon' stroke='#DE5BFF'/>
+                        <h6 id='title'>Home</h6>
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/allreleases" className='row' activeClassName="selected">
+                        <AllReleasesIcon id='icon' stroke='#DE5BFF'/>
+                        <h6 id='title'>All Releases</h6>
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/profile" className='row' activeClassName="selected">
+                        <ProfileIcon id='icon' stroke='#DE5BFF'/>
+                        <h6 id='title'>Profile</h6>
+                      </NavLink>
+                    </li>
                 </ul>
             </div>
             

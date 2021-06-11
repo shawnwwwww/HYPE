@@ -35,11 +35,12 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    color: rgba(222, 91, 255, 0.4);
+    color: rgba(222, 91, 255, 1);
     justify-content: left;
     align-items: center;
     padding: 22px 0 22px 40px;
     box-sizing: border-box;
+    opacity: 0.6;
     
 }
 
@@ -47,10 +48,14 @@
 .SidebarList .row:hover{
     cursor: pointer;
     color: #DE5BFF;
+    text-decoration: none;
+    opacity: 1;
+
 }
 
-.Sidebar #active{
+.Sidebar .selected{
     color: #DE5BFF;
+    opacity: 1;
 
 }
 
