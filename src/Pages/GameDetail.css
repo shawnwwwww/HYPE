@@ -137,6 +137,9 @@
     align-self: right;
     justify-self: right;
     grid-area: image;
+    object-fit: cover;
+    border-radius: 6px;
+
 
 }
 
