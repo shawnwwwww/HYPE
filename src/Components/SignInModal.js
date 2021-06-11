@@ -1,13 +1,15 @@
-import React, {useRef, useEffect, useCallback} from 'react';
+import React, {useRef, useEffect, useCallback, useState} from 'react';
 import {useSpring, animated} from 'react-spring'
 import './SignInModal.css'
 import { ReactComponent as CloseIcon } from './icons/x.svg';
+import { useAuth } from "../Contexts/AuthContext";
 
 
 
 export const SignInModal = ({showModal, setShowModal}) => {
-
-    const modalRef = useRef()
+    const modalRef = useRef();
+    const { signInWithGoogle } = useAuth();
+    const [loading, setLoading] = useState(false);
 
     const animation = useSpring({
         config: {
@@ -15,7 +17,7 @@ export const SignInModal = ({showModal, setShowModal}) => {
         },
         opacity: showModal ? 1 : 0,
         transform: showModal ? `translateY(0%)` : `translateY(15%)`
-    })
+    });
 
     const closeModal = e => {
         if(modalRef.current === e.target) {
@@ -23,16 +25,27 @@ export const SignInModal = ({showModal, setShowModal}) => {
         }
     };
 
+    const handleGoogleSignIn = async () => {
+        try {
+            setLoading(true);
+            await signInWithGoogle();
+        } catch (error) {
+            console.log('Failed to sign in: ' + error.message);
+        }
+
+        setLoading(false);
+    };
+
     const keyPress = useCallback(e =>{
         if (e.key === 'Escape' && showModal){
-            setShowModal(false)
+            setShowModal(false);
         }
-    }, [setShowModal, showModal])
+    }, [setShowModal, showModal]);
 
     useEffect(() => {
         document.addEventListener('keydown', keyPress);
-        return () => document.removeEventListener('keydown', keyPress)
-    }, [keyPress])
+        return () => document.removeEventListener('keydown', keyPress);
+    }, [keyPress]);
 
     return(
 
@@ -61,14 +74,19 @@ export const SignInModal = ({showModal, setShowModal}) => {
                             </div>
                             
                         </div>
+
+                        <button className='signInButton' onClick={handleGoogleSignIn} disabled={loading}>
+                            <img className='signInLogo' id='googleIcon' src='/Resources/logo/google.png'></img>
+                            <span id='googleButtonText'>Continue with Google</span>
+                        </button>
                         
-                        <div className='signInButtonGroup'>
+                        {/* <div className='signInButtonGroup'>
                             <div className='signInButton'>
                                 <img className='signInLogo' id='googleIcon'
                                 src='/Resources/logo/google.png' alt="Google Icon"></img>
                                 <p className='buttonText' id='googleButtonText'>Continue with Google</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                         
 

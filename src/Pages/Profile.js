@@ -1,18 +1,30 @@
 import React from 'react';
-import ProfileHypeItem from '../Components/ProfileHypeItem'
-import './Profile.css'
-import Switch from '../Components/Switch'
-import Button from '../Components/Button'
+import ProfileHypeItem from '../Components/ProfileHypeItem';
+import './Profile.css';
+import '../Components/Button.css';
+import Switch from '../Components/Switch';
+import Button from '../Components/Button';
+import { useAuth } from '../Contexts/AuthContext';
 
 
 const Profile = () => {
+    const { currentUser, signOut } = useAuth();
+
+    const handleSignOut = async () => {
+        try {
+            await signOut();
+        } catch (error) {
+            console.log('Failed to sign out: ' + error.message);
+        }
+    };
+
     return (
 
         <div className='profilePageContainer'>
             <div className='profilePageHeader'>
                 <div className='profileHeader'>
                     <img id='userAvatar' src='https://i.pinimg.com/564x/e5/4f/f1/e54ff1eafb5340f6c2ac57a720f4180f.jpg' alt="User Avatar"></img>
-                    <h1>Nathan</h1>
+                    <h1>{currentUser && currentUser.displayName}</h1>
                 </div>
                 <div className='hypePreference'>
                     <h5>HYPE Preference</h5>
@@ -43,7 +55,8 @@ const Profile = () => {
                         </ul>           
                     </div>
 
-                    <Button id='signOutButton' buttonText='SIGN OUT'/>
+                    <button className='buttonContainer' id='buttonTextID' onClick={handleSignOut}>SIGN OUT</button>
+                    {/* <Button id='signOutButton' buttonText='SIGN OUT'/> */}
                 </div>
             </div>
             <div className='profileHypeList'>

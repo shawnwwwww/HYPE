@@ -1,6 +1,7 @@
 import './App.css';
-import Sidebar from './Components/Sidebar'
-// import GameItem from './Components/GameItem'
+import Sidebar from './Components/Sidebar';
+// import GameItem from './Components/GameItem';
+import { AuthProvider } from './Contexts/AuthContext';
 
 
 import {
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       
         <Router>
+          <AuthProvider>
             <Switch>
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/allreleases" component={AllRelease} />
@@ -36,6 +38,7 @@ function App() {
             </Switch>
 
             <Sidebar />
+          </AuthProvider>
         </Router>
       
     </div>
