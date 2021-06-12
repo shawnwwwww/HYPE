@@ -29,6 +29,11 @@
     margin: 70px 0 0 0;
 }
 
+.SidebarList li{
+    list-style-type: none;
+
+}
+
 .SidebarList .row{
     width: 100%;
     margin: 0;
