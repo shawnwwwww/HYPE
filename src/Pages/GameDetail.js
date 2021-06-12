@@ -4,19 +4,21 @@ import Dropdown from '../Components/Dropdown'
 import HypeButton from '../Components/HypeButton'
 import PurchaseButton from '../Components/PurchaseButton'
 import Video from '../Components/Video'
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
+
 
 // Receives:
 // switch_img_self_link, img_self_link, game_title, release_date, platforms
 
 const GameDetail = () => {
     const location = useLocation();
+    let history = useHistory();
+
 
   return (
     <div className="pageContainer">
       <div className='backNavContainer'>
-        <div className='backIcon'></div>
-        <h5>BACK</h5>
+        <button onClick={() => history.goBack()}>Back</button> 
       </div>
 
       <div className='gameDetailPageContainer'>
