@@ -30,7 +30,7 @@ const GameDetail = () => {
 
               </img>
               <div className='gameTitleHeader'>
-                <p>Nintendo</p>
+                <p>{location.state.publisher}</p>
                 <p className='titleP'>{location.state.game_title}</p>
               </div>
 
@@ -53,11 +53,11 @@ const GameDetail = () => {
               </div> */}
 
               <p className='textRightAligned'>MSRP</p>
-              <p>$49.99</p>
+              <p>{location.state.msrp}</p>
 
               <p className='textRightAligned'>Developer</p>
-              <p>Nintendo</p>
-              {/* <p>{location.state.platforms}</p> */}
+              {/* <p>Nintendo</p> */}
+              <p>{location.state.developer}</p>
 
 
             </div>

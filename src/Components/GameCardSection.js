@@ -28,7 +28,11 @@ function GameCardSection(props) {
                                     img_self_link={val.img_self_link} 
                                     game_title={val.game_title}
                                     release_date={val.release_date}
-                                    platforms={val.platforms}/>
+                                    platforms={val.platforms}
+                                    developer={val.developer}
+                                    publisher={val.publisher}
+                                    msrp={val.msrp}
+                                    />
                                 </div>
                             )
                         })}

@@ -4,7 +4,7 @@ import HypeButton from './HypeButton'
 import { useHistory, Link } from 'react-router-dom';
 
 
-function GameItem({ switch_img_self_link, img_self_link, game_title, release_date, platforms }) {
+function GameItem({ switch_img_self_link, img_self_link, game_title, release_date, platforms, developer, publisher, msrp }) {
     const history = useHistory();
 
     const handleOnClick = () => {
@@ -15,7 +15,10 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
                 img_self_link: img_self_link,
                 game_title: game_title,
                 release_date: release_date,
-                platforms: platforms
+                platforms: platforms,
+                developer: developer,
+                publisher: publisher,
+                msrp: msrp,
             }
         });
     };

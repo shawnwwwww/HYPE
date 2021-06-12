@@ -26,7 +26,7 @@
 
 .gameItem{
     /* grid-column-end: span 2; */
-    min-width: 152px;
+    min-width: 164px;
     grid-row: 1;
 }
 
