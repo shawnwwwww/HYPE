@@ -40,7 +40,7 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
                     }
                 </div>
                 <div className='titleAndDate'>
-                    <p className='titleP'>{ <Link to='/gamedetail'>{game_title}</Link> }</p>
+                    <p className='titleP' onClick={() => handleOnClick()}>{game_title}</p>
                     <p className='caption'>{release_date}</p>
                 </div>
             </div>

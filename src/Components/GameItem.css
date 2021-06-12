@@ -63,13 +63,14 @@
 
 }
 
-.titleP a{
+.titleP{
     color: white;
 }
 
-.titleP a:hover{
+.titleP:hover{
     opacity: 0.7;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .card{
