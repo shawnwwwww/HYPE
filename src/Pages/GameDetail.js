@@ -70,10 +70,10 @@ const GameDetail = () => {
         <div className='gameDetailSectionContainer'>
           <div className='sectionContainer'>
             <h5>Purchase</h5>
-            <div className='dropdownGroup'>
+            {/* <div className='dropdownGroup'>
               <Dropdown isPlatform='true'/>
               <Dropdown isPlatform=''/>
-            </div>
+            </div> */}
             <div className='purchaseButtonGroup'>
               {/* grid */}
               <PurchaseButton retailer='amazon' preorderBonus={true}/>
@@ -107,10 +107,9 @@ const GameDetail = () => {
             </div>
           </div>
 
-          <div className='sectionContainer'>
+          {/* <div className='sectionContainer'>
             <h5>Coverage</h5>
             <div className='videoGroup'>
-              {/* grid */}
               <Video 
                 title='Miitopia - Review'
                 uploader='IGN'
@@ -132,7 +131,7 @@ const GameDetail = () => {
               coverImageURL='https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/miitopia-switch/egdp/Switch_Miitopia_eGDP_Improvements_4_Graphics_Dragon_SCRN.jpg'
               videoTime='1:32'/>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

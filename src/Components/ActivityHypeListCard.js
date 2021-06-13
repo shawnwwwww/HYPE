@@ -2,7 +2,7 @@ import React from 'react'
 import './ActivityCard.css'
 import '../App.css'
 
-import { GameData } from './GameData'
+import { GameData } from '../Database/GameData'
 import { useHistory } from 'react-router-dom';
 
 

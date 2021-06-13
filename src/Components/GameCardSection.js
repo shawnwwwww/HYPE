@@ -1,20 +1,21 @@
 import React from 'react'
 import  GameItem  from './GameItem'
 import  Dropdown  from './Dropdown'
-import { GameData } from './GameData'
+import { GameData } from '../Database/GameData'
 import './GameCardSection.css'
 
 
 function GameCardSection(props) {
+    // const importLocation = props.location;
     return (
         <div className='sectionContainer'>
             <div className='header'>
                 <h4>{props.title}</h4>
-                <div className='dropdownGroup'>
+                {/* <div className='dropdownGroup'>
                     <Dropdown isPlatform='true'/>
                     <Dropdown isPlatform=''/>
 
-                </div>
+                </div> */}
             </div>
 
             {props.type === 'section' ?
@@ -32,6 +33,8 @@ function GameCardSection(props) {
                                     developer={val.developer}
                                     publisher={val.publisher}
                                     msrp={val.msrp}
+                                    is_physical={val.is_physical}
+                                    is_digital={val.is_digital}
                                     />
                                 </div>
                             )
@@ -52,7 +55,13 @@ function GameCardSection(props) {
                                     img_self_link={val.img_self_link} 
                                     game_title={val.game_title}
                                     release_date={val.release_date}
-                                    platforms={val.platforms}/>
+                                    platforms={val.platforms}
+                                    developer={val.developer}
+                                    publisher={val.publisher}
+                                    msrp={val.msrp}
+                                    is_physical={val.is_physical}
+                                    is_digital={val.is_digital}
+                                    />
                                 </div>
                             )
                         })}
