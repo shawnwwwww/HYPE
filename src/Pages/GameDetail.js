@@ -47,7 +47,7 @@ const GameDetail = () => {
               <p>{location.state.release_date}</p>
 
               <p className='textRightAligned'>Platform</p>
-                <p>{location.state.platforms}</p>
+                <p>{location.state.platforms.join(", ")}</p>
 
               {/* <p className='textRightAligned'>Metacritics</p>
               <div className='metacritics'>
