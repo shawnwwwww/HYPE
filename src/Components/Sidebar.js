@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './Sidebar.css';
 import { SidebarData } from './SidebarData';
 import { useHistory } from 'react-router-dom';
@@ -57,12 +57,14 @@ function Sidebar() {
                     </li>
                 </ul>
             </div>
-            
-            <div className='UserProfile'>
+            <div>
+              <div className='UserProfile'>
                 <img id='userAvatar' src='https://i.pinimg.com/564x/e5/4f/f1/e54ff1eafb5340f6c2ac57a720f4180f.jpg' alt="User Avatar"></img>
                 <h6 onClick={openModal}>Sign In</h6>
                 <SignInModal showModal={showModal} setShowModal={setShowModal}/>
             </div>
+            </div>
+
             
         </div>
     );

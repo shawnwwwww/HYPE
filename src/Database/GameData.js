@@ -1,6 +1,7 @@
 export const GameData = [
 
     {
+        game_id: "pokemon-brilliant-diamond", 
         game_title: "Pokémon Brilliant Diamond", 
         release_date: '2021-11-19', 
         preorder_date:'', 

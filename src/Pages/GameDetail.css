@@ -68,9 +68,9 @@
 }
 
 .gameDetailCard{
-    background: 
+    /* background: 
     linear-gradient(180.24deg, rgba(19, 16, 22, 0.6) 0.21%, #131016 99.79%), 
-    url('https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/m/miitopia-switch/hero?v=2021052417');
+    url('https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/m/miitopia-switch/hero?v=2021052417'); */
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;

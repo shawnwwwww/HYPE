@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './GameItem.css'
 import HypeButton from './HypeButton'
 import { useHistory, Link } from 'react-router-dom';
-
+import firebase from 'firebase'
+import { useAuth } from '../Contexts/AuthContext';
+import { SignInModal } from './SignInModal';
+import HypeButtonMock from './HypeButtonMock';
 
 function GameItem({ switch_img_self_link, img_self_link, game_title, release_date, platforms, developer, publisher, msrp, is_physical, is_digital}) {
     const history = useHistory();
+    const storageRef = firebase.storage().ref();
+    const { currentUser } = useAuth();
+
+    const [showModal, setShowModal] = useState(false)
+    const openModal = () => {
+        setShowModal(prev => !prev);
+      };
 
     const handleOnClick = () => {
         history.push({
@@ -30,9 +40,10 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
             <div className='GameInfo'>    
 
             {/* digital only */}
-            {is_physical === '0' ? 
+            {is_physical === false ? 
             
             <div className='imageContainer digitalOnly' onClick={() => handleOnClick()}> 
+
                 <div className='mediaFormLabel'>
                     <p className='buttonText'>DIGITAL</p>
                 </div>
@@ -40,11 +51,11 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
             </div> :null}  
 
             {/* digital only */}
-            {is_physical === '1'  && is_digital === '1'? 
+            {is_physical === true  && is_digital === true? 
             
             <div className='imageContainer' onClick={() => handleOnClick()}> 
-                    <img className='physicalImage' src={switch_img_self_link} alt="Physical copy of {game_title}"></img>
-                    <img className='digitalImage' src={img_self_link} alt="Digital copy of {game_title}"></img>
+                <img className='physicalImage' src={switch_img_self_link} alt="Physical copy of {game_title}"></img>
+                <img className='digitalImage' src={img_self_link} alt="Digital copy of {game_title}"></img>
             </div> :null}  
 
                 <div className='platformList'>
@@ -61,7 +72,9 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
                     <p className='caption'>{release_date}</p>
                 </div>
             </div>
-            <HypeButton />
+
+            {currentUser === null ? <HypeButtonMock hypeCount='0'/> : <HypeButton />}
+
         </div>
     )
 }

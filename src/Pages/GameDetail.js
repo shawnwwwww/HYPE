@@ -23,7 +23,19 @@ const GameDetail = () => {
 
       <div className='gameDetailPageContainer'>
         <div className='gameDetailCardContainer'>
-          <div className='gameDetailCard'>
+          <div 
+              className="gameDetailCard"
+              style={{
+                //remember to add a gradient in figma before uploading to db
+                backgroundImage: `url(${location.state.img_self_link})`,
+                // background: linear-gradient(180.24deg, rgba(19, 16, 22, 0.6) 0.21%, #131016 99.79%)
+              }}>
+              {/* <div
+              className="character-card"
+              style={{
+                // background: linear-gradient(180.24deg, rgba(19, 16, 22, 0.6) 0.21%, #131016 99.79%)
+              }}> */}
+          
             <div className='gameHeader'>
               <img 
                 className='gameImage'

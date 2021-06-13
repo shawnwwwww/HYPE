@@ -70,7 +70,7 @@ export const SignInModal = ({showModal, setShowModal}) => {
                                 {/* <img>
                                 </img> */}
                                 {/* <X color="#DE5BFF" size={24} /> */}
-                                <CloseIcon stroke='#DE5BFF'/>
+                                {/* <CloseIcon stroke='#DE5BFF'/> */}
                             </div>
                             
                         </div>

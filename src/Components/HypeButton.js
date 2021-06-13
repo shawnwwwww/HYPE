@@ -1,7 +1,12 @@
 import React from 'react'
 import './HypeButton.css'
+import { useAuth } from '../Contexts/AuthContext';
+import { SignInModal } from './SignInModal';
+
 
 class HypeButton extends React.Component {
+
+
     constructor(props) {
         super(props);
         this.state = {
