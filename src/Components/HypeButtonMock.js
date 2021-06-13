@@ -19,7 +19,7 @@ function HypeButtonMock(props) {
                 <div className='hypeButton'
                     style={{
                         backgroundColor: 
-                            'rgba(222, 91, 255, 0.2)'
+                            'rgba(222, 91, 255, 0.04)'
                     }}
                     // onClick={this.handleClick}
                 >

@@ -73,7 +73,7 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
                 </div>
             </div>
 
-            {currentUser === null ? <HypeButtonMock hypeCount='0'/> : <HypeButton />}
+            {currentUser === null ? <HypeButtonMock hypeCount={0}/> : <HypeButton hypeCount={10}/>}
 
         </div>
     )
