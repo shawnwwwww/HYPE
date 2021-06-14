@@ -1,21 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProfileHypeItem from '../Components/ProfileHypeItem';
 import './Profile.css';
 import '../Components/Button.css';
 import Switch from '../Components/Switch';
 import Button from '../Components/Button';
 import { useAuth } from '../Contexts/AuthContext';
+import { SignOutModal } from '../Components/SignOutModal';
 
 
 const Profile = () => {
-    const { currentUser, signOut } = useAuth();
+    const { currentUser } = useAuth();
+    const [showModalSignOut, setShowModalSignOut] = useState(false);
 
-    const handleSignOut = async () => {
-        try {
-            await signOut();
-        } catch (error) {
-            console.log('Failed to sign out: ' + error.message);
-        }
+    const openModalSignOut = () => {
+        setShowModalSignOut(prev => !prev);
     };
 
     return (
@@ -55,8 +53,8 @@ const Profile = () => {
                         </ul>           
                     </div>
 
-                    <button className='buttonContainer' id='buttonTextID' onClick={handleSignOut}>SIGN OUT</button>
-                    {/* <Button id='signOutButton' buttonText='SIGN OUT'/> */}
+                    <button className='buttonContainer' id='buttonTextID' onClick={openModalSignOut}>SIGN OUT</button>
+                    <SignOutModal showModal={showModalSignOut} setShowModal={setShowModalSignOut} onPrivateRoute={true} />
                 </div>
             </div>
             <div className='profileHypeList'>
