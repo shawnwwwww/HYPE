@@ -29,6 +29,7 @@ export const SignInModal = ({showModal, setShowModal}) => {
         try {
             setLoading(true);
             await signInWithGoogle();
+            setShowModal(false);
         } catch (error) {
             console.log('Failed to sign in: ' + error.message);
         }

@@ -2,6 +2,7 @@ import './App.css';
 import Sidebar from './Components/Sidebar';
 // import GameItem from './Components/GameItem';
 import { AuthProvider } from './Contexts/AuthContext';
+import PrivateRoute from './Components/PrivateRoute';
 
 
 import {
@@ -30,7 +31,7 @@ function App() {
             <Switch>
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/allreleases" component={AllRelease} />
-                <Route exact path="/profile" component={Profile} />
+                <PrivateRoute exact path="/profile" component={Profile} />
                 <Route exact path="/gamedetail" component={GameDetail} />
                 {/*Default page if the user manually changes path*/}
                 <Route component={Home} />

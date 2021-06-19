@@ -1,21 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProfileHypeItem from '../Components/ProfileHypeItem';
 import './Profile.css';
 import '../Components/Button.css';
 import Switch from '../Components/Switch';
 import Button from '../Components/Button';
 import { useAuth } from '../Contexts/AuthContext';
+import { SignOutModal } from '../Components/SignOutModal';
 
 
 const Profile = () => {
-    const { currentUser, signOut } = useAuth();
+    const { currentUser } = useAuth();
+    const [showModalSignOut, setShowModalSignOut] = useState(false);
 
-    const handleSignOut = async () => {
-        try {
-            await signOut();
-        } catch (error) {
-            console.log('Failed to sign out: ' + error.message);
-        }
+    const openModalSignOut = () => {
+        setShowModalSignOut(prev => !prev);
     };
 
     return (
@@ -23,7 +21,7 @@ const Profile = () => {
         <div className='profilePageContainer'>
             <div className='profilePageHeader'>
                 <div className='profileHeader'>
-                    <img id='userAvatar' src='https://i.pinimg.com/564x/e5/4f/f1/e54ff1eafb5340f6c2ac57a720f4180f.jpg' alt="User Avatar"></img>
+                    <img id='userAvatar' src={currentUser ? currentUser.photoURL : 'https://i.pinimg.com/564x/e5/4f/f1/e54ff1eafb5340f6c2ac57a720f4180f.jpg'} alt="User Avatar"></img>
                     <h1>{currentUser && currentUser.displayName}</h1>
                 </div>
                 <div className='hypePreference'>
@@ -55,8 +53,8 @@ const Profile = () => {
                         </ul>           
                     </div>
 
-                    <button className='buttonContainer' id='buttonTextID' onClick={handleSignOut}>SIGN OUT</button>
-                    {/* <Button id='signOutButton' buttonText='SIGN OUT'/> */}
+                    <button className='buttonContainer' id='buttonTextID' onClick={openModalSignOut}>SIGN OUT</button>
+                    <SignOutModal showModal={showModalSignOut} setShowModal={setShowModalSignOut} onPrivateRoute={true} />
                 </div>
             </div>
             <div className='profileHypeList'>

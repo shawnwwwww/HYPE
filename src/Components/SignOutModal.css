@@ -1,0 +1,80 @@
+.signOutModalContainer{
+    max-width: 400px;
+    background: linear-gradient(180deg, #270E2E 0%, #DE5BFF 100%);
+    border: 1px solid #DE5BFF;
+    box-sizing: border-box;
+    /* bad performance drop shadow */
+    /* filter: drop-shadow(0px 15px 295px #270E2E)
+    drop-shadow(0px 6.26664px 123.244px rgba(39, 14, 46, 0.718854))
+    drop-shadow(0px 3.35045px 65.8921px rgba(39, 14, 46, 0.596107))
+    drop-shadow(0px 1.87823px 36.9386px rgba(39, 14, 46, 0.5))
+    drop-shadow(0px 0.997515px 19.6178px rgba(39, 14, 46, 0.403893))
+    drop-shadow(0px 0.415088px 8.16341px rgba(39, 14, 46, 0.281146)); */
+    border-radius: 30px;
+    padding: 40px 37px 34px;
+
+}
+
+.signOutHeaderAndCloseIcon{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.signOutModalContainer h4{
+    color: #DE5BFF;
+    margin-bottom: 12px;
+}
+
+.signOutModalHeader{
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.signOutPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signOutButton, .cancelButton{
+    width: 100%;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 18px;
+    background: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.cancelButton{
+    background: transparent;
+}
+
+.signOutLogo{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.closeIcon{
+    order: 2;
+}
