@@ -7,7 +7,7 @@ import { useAuth } from '../Contexts/AuthContext';
 import { SignInModal } from './SignInModal';
 import HypeButtonMock from './HypeButtonMock';
 
-function GameItem({ switch_img_self_link, img_self_link, game_title, release_date, platforms, developer, publisher, msrp, is_physical, is_digital}) {
+function GameItem({ switch_img_self_link, img_self_link, game_title, release_date, platforms, developer, publisher, msrp, is_physical, is_digital, game_id}) {
     const history = useHistory();
     const storageRef = firebase.storage().ref();
     const { currentUser } = useAuth();
@@ -15,7 +15,18 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
     const [showModal, setShowModal] = useState(false)
     const openModal = () => {
         setShowModal(prev => !prev);
-      };
+    };
+
+    // what is this
+    // const db = firebase.database();
+    // var hypeCountRef = firebase.database().ref('game_data/' + game_id + '/hype');
+    // hypeCountRef.on('value', (snapshot) => {
+    //     const data = snapshot.val();
+    //     console.log(data);
+
+    //     // updateStarCount(postElement, data);
+    // });
+      
 
     const handleOnClick = () => {
         history.push({

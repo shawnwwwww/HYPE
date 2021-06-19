@@ -18,7 +18,7 @@ function GameCardSection(props) {
 
     
     const ref = firebase.firestore().collection('game_data');
-    console.log(ref);
+    // console.log(ref);
     
     // realtime update
     // function getGameData() {
