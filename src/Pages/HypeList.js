@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProfileHypeItem from '../Components/ProfileHypeItem';
-import './Profile.css';
+import './HypeList.css';
 import '../Components/Button.css';
 import Switch from '../Components/Switch';
 import Button from '../Components/Button';
@@ -8,7 +8,7 @@ import { useAuth } from '../Contexts/AuthContext';
 import { SignOutModal } from '../Components/SignOutModal';
 
 
-const Profile = () => {
+const HypeList = () => {
     const { currentUser } = useAuth();
     const [showModalSignOut, setShowModalSignOut] = useState(false);
 
@@ -94,4 +94,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default HypeList;

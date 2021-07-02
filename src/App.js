@@ -15,7 +15,7 @@ import {
 // Pages
 import Home from "./Pages/Home"
 import GameDetail from "./Pages/GameDetail"
-import Profile from './Pages/Profile'
+import HypeList from './Pages/HypeList'
 import AllRelease from './Pages/AllReleases'
 
 /* NOTES */
@@ -31,7 +31,7 @@ function App() {
             <Switch>
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/allreleases" component={AllRelease} />
-                <PrivateRoute exact path="/profile" component={Profile} />
+                <PrivateRoute exact path="/hypelist" component={HypeList} />
                 <Route exact path="/gamedetail" component={GameDetail} />
                 {/*Default page if the user manually changes path*/}
                 <Route component={Home} />

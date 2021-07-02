@@ -63,16 +63,16 @@ function Sidebar() {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/profile" className='row' activeClassName="selected" onClick={openModalProfile}>
+                      <NavLink to="/hypelist" className='row' activeClassName="selected" onClick={openModalProfile}>
                         <ProfileIcon id='icon' stroke='#DE5BFF'/>
-                        <h6 id='title'>Profile</h6>
+                        <h6 id='title'>Hype List</h6>
                       </NavLink>
                     </li>
                 </ul>
                 <SignInModal showModal={showModalProfile} setShowModal={setShowModalProfile} />
             </div>
             
-            <Link to="/profile" className='UserProfile' onClick={openModalSignIn}>
+            <Link className='UserProfile' onClick={openModalSignIn}>
                 <img id='userAvatar' src={currentUser ? currentUser.photoURL : 'https://i.pinimg.com/564x/e5/4f/f1/e54ff1eafb5340f6c2ac57a720f4180f.jpg'} alt="User Avatar"></img>
                 <h6>{currentUser ? currentUser.displayName : 'Sign In'}</h6>
             </Link>
