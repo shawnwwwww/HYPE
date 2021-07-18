@@ -16,7 +16,7 @@ import {
 import Home from "./Pages/Home"
 import GameDetail from "./Pages/GameDetail"
 import HypeList from './Pages/HypeList'
-import AllRelease from './Pages/AllReleases'
+import AllReleases from './Pages/AllReleases'
 
 /* NOTES */
 // Right now the default page goes to "/profile" due to something with
@@ -30,7 +30,7 @@ function App() {
           <AuthProvider>
             <Switch>
                 <Route exact path="/home" component={Home} />
-                <Route exact path="/allreleases" component={AllRelease} />
+                <Route exact path="/allreleases" component={AllReleases} />
                 <PrivateRoute exact path="/hypelist" component={HypeList} />
                 <Route exact path="/gamedetail" component={GameDetail} />
                 {/*Default page if the user manually changes path*/}

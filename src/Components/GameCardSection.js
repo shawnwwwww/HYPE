@@ -6,6 +6,7 @@ import './GameCardSection.css'
 import firebase from 'firebase'
 // import { useAuth } from '../Contexts/AuthContext';
 // import { SignInModal } from './SignInModal';
+import {Game, gameConverter} from './FirebaseHelpers'
 
 
 var storage = firebase.storage();
@@ -31,8 +32,13 @@ function GameCardSection(props) {
     //     });
     // }
 
+    function formatDate(date) {
+        let month = date.getMonth() + 1;
+        return date.getFullYear() + "-" + month + "-" + date.getDate();
+    }
+
     function getGameData() {
-        ref.get().then((item) => {
+        ref.withConverter(gameConverter).get().then((item) => {
             const items = item.docs.map((doc) => doc.data());
             setGameData(items);
         })
@@ -56,20 +62,21 @@ function GameCardSection(props) {
             {props.type === 'section' ?
                 <div className='gridContainer'>
                     <div className='gameCardContainer'>
-                        {game_data.map((val, key) => {
+                        {Object.keys(game_data).map((val, key) => {
                             return (
                                 <div className='gameItem' key={key}>
                                     <GameItem 
-                                    switch_img_self_link={val.switch_img_self_link}
-                                    img_self_link={val.img_self_link} 
-                                    game_title={val.game_title}
-                                    release_date={val.release_date}
-                                    platforms={val.platforms}
-                                    developer={val.developer}
-                                    publisher={val.publisher}
-                                    msrp={val.msrp}
-                                    is_physical={val.is_physical}
-                                    is_digital={val.is_digital}
+                                    switch_img_self_link={game_data[val].switch_img_self_link}
+                                    img_self_link={game_data[val].img_self_link} 
+                                    game_title={game_data[val].game_title}
+                                    release_date={formatDate(game_data[val].release_date.toDate())}
+                                    platforms={game_data[val].platforms}
+                                    developer={game_data[val].developer}
+                                    publisher={game_data[val].publisher}
+                                    msrp={game_data[val].msrp}
+                                    is_physical={game_data[val].is_physical}
+                                    is_digital={game_data[val].is_digital}
+                                    hypes={game_data[val].hype}
                                     />
                                 </div>
                             )
@@ -81,46 +88,26 @@ function GameCardSection(props) {
             {props.type === 'allReleases' ?
                 <div className='gridContainerAllreleases'>
                     <div className='gameCardContainerAllreleases'>
-                        {game_data.map((val) => val.visibility === true ? (
-                            // <GameItem game={game.game_title}/>
-                            // <p>{game.game_title}</p>
-                            // <div key={game.game_id}>
-                            //     <p>{game.game_title}</p>
-                            // </div>
-                            <div className='gameItemAllreleases' key={val.game_id}>
-                                <GameItem 
-                                switch_img_self_link={val.switch_img_self_link}
-                                img_self_link={val.img_self_link} 
-                                game_title={val.game_title}
-                                release_date={val.release_date}
-                                platforms={val.platforms}
-                                developer={val.developer}
-                                publisher={val.publisher}
-                                msrp={val.msrp}
-                                is_physical={val.is_physical}
-                                is_digital={val.is_digital}
-                                />
-                            </div>
-                        ) : null )}
-                        {/* {game_data.map((val, key) => {
-                            return (
-                                <div className='gameItemAllreleases' key={key}>
-                                    <GameItem 
-                                    switch_img_self_link={val.switch_img_self_link}
-                                    img_self_link={val.img_self_link} 
-                                    game_title={val.game_title}
-                                    release_date={val.release_date}
-                                    platforms={val.platforms}
-                                    developer={val.developer}
-                                    publisher={val.publisher}
-                                    msrp={val.msrp}
-                                    is_physical={val.is_physical}
-                                    is_digital={val.is_digital}
-                                    />
-                                </div>
-                            )
-                        })} */}
-                    {/* grid */}
+                        {Object.keys(game_data).map((val, key) => {
+                                return (
+                                    <div className='gameItem' key={key}>
+                                        <GameItem 
+                                        switch_img_self_link={game_data[val].switch_img_self_link}
+                                        img_self_link={game_data[val].img_self_link} 
+                                        game_title={game_data[val].game_title}
+                                        release_date={formatDate(game_data[val].release_date.toDate())}
+                                        platforms={game_data[val].platforms}
+                                        developer={game_data[val].developer}
+                                        publisher={game_data[val].publisher}
+                                        msrp={game_data[val].msrp}
+                                        is_physical={game_data[val].is_physical}
+                                        is_digital={game_data[val].is_digital}
+                                        hypes={game_data[val].hype}
+                                        />
+                                    </div>
+                                )
+                            })}
+                        {/* grid */}
                     </div>
                 </div>
             :null}

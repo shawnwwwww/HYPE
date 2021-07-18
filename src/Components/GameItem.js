@@ -7,7 +7,7 @@ import { useAuth } from '../Contexts/AuthContext';
 import { SignInModal } from './SignInModal';
 import HypeButtonMock from './HypeButtonMock';
 
-function GameItem({ switch_img_self_link, img_self_link, game_title, release_date, platforms, developer, publisher, msrp, is_physical, is_digital, game_id}) {
+function GameItem({ switch_img_self_link, img_self_link, game_title, release_date, platforms, developer, publisher, msrp, is_physical, is_digital, hypes, game_id}) {
     const history = useHistory();
     const storageRef = firebase.storage().ref();
     const { currentUser } = useAuth();
@@ -42,6 +42,7 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
                 msrp: msrp,
                 is_physical: is_physical,
                 is_digital: is_digital,
+                hypes: hypes,
             }
         });
     };
@@ -84,7 +85,7 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
                 </div>
             </div>
 
-            {currentUser === null ? <HypeButtonMock hypeCount={0}/> : <HypeButton hypeCount={10}/>}
+            {currentUser === null ? <HypeButtonMock hypes={10}/> : <HypeButton hypes={hypes}/>}
 
         </div>
     )

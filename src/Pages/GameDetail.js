@@ -76,7 +76,7 @@ const GameDetail = () => {
 
             </div>
           </div>
-          <HypeButton className='hypeButton'/>
+          <HypeButton className='hypeButton' hypes={location.state.hypes}/>
           
         </div>
         <div className='gameDetailSectionContainer'>

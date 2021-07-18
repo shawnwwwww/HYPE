@@ -11,7 +11,7 @@ class HypeButton extends React.Component {
         super(props);
         this.state = {
             inFocus: 0,
-            hypes: props.hypeCount,
+            hypes: props.hypes,
             isHyped: false
         }
   
