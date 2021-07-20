@@ -6,7 +6,7 @@ import './GameCardSection.css'
 import firebase from 'firebase'
 // import { useAuth } from '../Contexts/AuthContext';
 // import { SignInModal } from './SignInModal';
-import {Game, gameConverter} from './FirebaseHelpers'
+import { gameConverter } from './FirebaseHelpers'
 
 
 var storage = firebase.storage();
@@ -16,10 +16,9 @@ function GameCardSection(props) {
     const [game_data, setGameData] = useState([]);
     // const storageRef = firebase.storage().ref();
     // const { currentUser } = useAuth();
-
+    let items;
     
     const ref = firebase.firestore().collection('game_data');
-    // console.log(ref);
     
     // realtime update
     // function getGameData() {
@@ -37,16 +36,41 @@ function GameCardSection(props) {
         return date.getFullYear() + "-" + month + "-" + date.getDate();
     }
 
-    function getGameData() {
-        ref.withConverter(gameConverter).get().then((item) => {
-            const items = item.docs.map((doc) => doc.data());
-            setGameData(items);
-        })
+    function getGameData(type) {
+        switch (type) {
+            case 'allReleases':
+                // get {num} of all releases, sorted by newest released?
+                ref.withConverter(gameConverter).get().then((item) => {
+                    const items = item.docs.map((doc) => doc.data());
+                    setGameData(items);
+                })
+                break;
+            case 'releasingSoon':
+                // get {num} releases that are releasing soon
+                ref.withConverter(gameConverter).get().then((item) => {
+                    const items = item.docs.map((doc) => doc.data());
+                    setGameData(items);
+                })
+                break;
+            case 'wholesomeDirect':
+                ref.withConverter(gameConverter).get().then((item) => {
+                    const items = item.docs.map((doc) => doc.data());
+                    setGameData(items);
+                })
+                break;
+            case 'summerGameFestKickoff':
+                ref.withConverter(gameConverter).get().then((item) => {
+                    const items = item.docs.map((doc) => doc.data());
+                    setGameData(items);
+                })
+                break;
+        }
     }
 
     useEffect(() => {
-        getGameData();
+        getGameData(props.type);
     }, []);
+
 
     return (
         <div className='sectionContainer'>
@@ -59,7 +83,7 @@ function GameCardSection(props) {
                 </div> */}
             </div>
 
-            {props.type === 'section' ?
+            {props.type !== 'allReleases' ?
                 <div className='gridContainer'>
                     <div className='gameCardContainer'>
                         {Object.keys(game_data).map((val, key) => {

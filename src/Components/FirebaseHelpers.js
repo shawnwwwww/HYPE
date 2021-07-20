@@ -32,6 +32,44 @@ class Game {
     }
 }
 
+// function getGameData(ref, type) {
+//     let items = [];
+//     function addItem(item) {items.push(item)}
+    
+//     switch (type) {
+//         case 'allReleases':
+//             // get all releases, sorted by newest released?
+//             ref.withConverter(gameConverter).get().then((item) => {
+//                 item.docs.map((doc) => addItem(doc.data()));
+//                 //return items;
+//             })
+//             console.log(items)
+//             return items;
+//             break;
+//         case 'releasingSoon':
+//             // get {num} releases that are releasing soon
+//             ref.withConverter(gameConverter).get().then((item) => {
+//                 const items = item.docs.map((doc) => doc.data());
+//             })
+//             break;
+//         case 'wholesomeDirect':
+//             ref.withConverter(gameConverter).get().then((item) => {
+//                 const items = item.docs.map((doc) => doc.data());
+//             })
+//             break;
+//         case 'summerGameFestKickoff':
+//             ref.withConverter(gameConverter).get().then((item) => {
+//                 const items = item.docs.map((doc) => doc.data());
+//             })
+//             break;
+//     }
+
+    // ref.withConverter(gameConverter).get().then((item) => {
+    //     const items = item.docs.map((doc) => doc.data());
+    //     setGameData(items);
+    // })
+// }
+
 function toDateTime(secs) {
     var t = new Date(Date.UTC(1970, 0, 1)); // Epoch
     t.setUTCSeconds(secs);
@@ -68,12 +106,11 @@ var gameConverter = {
     },
     fromFirestore: function(snapshot, options) {
         const data = snapshot.data(options);
-        console.log(data);
         return new Game(data)
     }
 }
 
 export {
     Game,
-    gameConverter
+    gameConverter,
 }
