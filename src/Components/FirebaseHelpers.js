@@ -92,7 +92,7 @@ var gameConverter = {
             steam_link: game.steam_link,
             kickstarter_link: game.kickstarter_link,
             is_physical: parseInt(game.is_physical, 10),
-            is_digital: parseInt(game.is_digital,),
+            is_digital: parseInt(game.is_digital, 10),
             img_self_link: game.img_self_link,
             banner_img_self_link: game.banner_img_self_link,
             switch_img_self_link: game.switch_img_self_link,

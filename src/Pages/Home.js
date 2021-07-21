@@ -17,7 +17,7 @@ const Home = () => {
    var [games, setGames] = useState({});
     var db_collection = firebaseFirestore.collection("game_data");
     
-    // SummerGameFestKickOffData.map((val, key) => {
+    // WholesomeDirectData.map((val, key) => {
     //     db_collection.add( {
     //         game_title: val.game_title,
     //         release_date: val.release_date,
@@ -29,8 +29,6 @@ const Home = () => {
     //         amazon_link: val.amazon_link,
     //         target_link: val.target_link,
     //         nintendo_eshop_link: val.nintendo_eshop_link,
-    //         steam_link: val.steam_link,
-    //         kickstarter_link: val.kickstarter_link,
     //         is_physical: parseInt(val.is_physical, 10),
     //         is_digital: parseInt(val.is_digital,),
     //         img_self_link: val.img_self_link,
@@ -44,18 +42,6 @@ const Home = () => {
     //         coverage_links: val.coverage_links
     //     } )
     // })
-
-    // firebaseFirestore.collection("game_data").doc("frank").add({
-    //     name: "Frank",
-    //     favorites: {
-    //       food: "Pizza",
-    //       color: "Blue",
-    //       subject: "Recess"
-    //     },
-    //     age: 12
-    //   }).then(function() {
-    //     console.log("Frank created");
-    //   });
 
     // db_collection.doc('game').add
     // db_collection.get().then((querySnapshot) => {

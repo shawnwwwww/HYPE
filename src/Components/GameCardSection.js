@@ -18,7 +18,7 @@ function GameCardSection(props) {
     // const { currentUser } = useAuth();
     let items;
     
-    const ref = firebase.firestore().collection('game_data');
+    const ref = firebase.firestore();
     
     // realtime update
     // function getGameData() {
@@ -40,26 +40,26 @@ function GameCardSection(props) {
         switch (type) {
             case 'allReleases':
                 // get {num} of all releases, sorted by newest released?
-                ref.withConverter(gameConverter).get().then((item) => {
+                ref.collection('game_data').withConverter(gameConverter).get().then((item) => {
                     const items = item.docs.map((doc) => doc.data());
                     setGameData(items);
                 })
                 break;
             case 'releasingSoon':
                 // get {num} releases that are releasing soon
-                ref.withConverter(gameConverter).get().then((item) => {
+                ref.collection('game_data').withConverter(gameConverter).get().then((item) => {
                     const items = item.docs.map((doc) => doc.data());
                     setGameData(items);
                 })
                 break;
             case 'wholesomeDirect':
-                ref.withConverter(gameConverter).get().then((item) => {
+                ref.collection('game_data').withConverter(gameConverter).get().then((item) => {
                     const items = item.docs.map((doc) => doc.data());
                     setGameData(items);
                 })
                 break;
             case 'summerGameFestKickoff':
-                ref.withConverter(gameConverter).get().then((item) => {
+                ref.collection('game_data').withConverter(gameConverter).get().then((item) => {
                     const items = item.docs.map((doc) => doc.data());
                     setGameData(items);
                 })
