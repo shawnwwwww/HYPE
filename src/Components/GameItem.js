@@ -52,23 +52,11 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
             <div className='GameInfo'>    
 
             {/* digital only */}
-            {is_physical == false ? 
             
             <div className='imageContainer digitalOnly' onClick={() => handleOnClick()}> 
-
-                <div className='mediaFormLabel'>
-                    <p className='buttonText'>DIGITAL</p>
-                </div>
                 <img className='digitalImage' src={img_self_link} alt="Digital copy of {game_title}"></img>
-            </div> :null}  
+            </div> 
 
-            {/* digital only */}
-            {is_physical == true  && is_digital == true? 
-            
-            <div className='imageContainer' onClick={() => handleOnClick()}> 
-                <img className='physicalImage' src={switch_img_self_link} alt="Physical copy of {game_title}"></img>
-                <img className='digitalImage' src={img_self_link} alt="Digital copy of {game_title}"></img>
-            </div> :null}  
 
                 <div className='platformList'>
                     {

@@ -1,111 +1,96 @@
-.gridContainer{
-    width: 100% !important;
-    grid-template-columns: repeat(10, [col-start] 1fr);
+.gridContainer {
+  width: 100% !important;
+  grid-template-columns: repeat(10, [col-start] 1fr);
 }
 
-.gameCardContainer{
-    display: grid;
-    /* grid-template-columns: repeat([col-start] 1fr); */
-    /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
-    gap: 26px;
-    margin-bottom: 50px;
-    width: 100%;
+.gameCardContainer {
+  display: grid;
+  /* grid-template-columns: repeat([col-start] 1fr); */
+  /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+  gap: 26px;
+  margin-bottom: 50px;
+  width: 100%;
 
-
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .gameCardContainer::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-
-
-.gameItem{
-    /* grid-column-end: span 2; */
-    min-width: 164px;
-    grid-row: 1;
+.gameItem {
+  /* grid-column-end: span 2; */
+  min-width: 200px;
+  grid-row: 1;
 }
 
-.gridContainerAllreleases{
-    display: grid;
-    /* grid-template-columns: repeat([col-start] 1fr); */
-    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
-    gap: 26px;
-    margin-bottom: 50px;
-    width: 100%;
+.gridContainerAllreleases {
+  display: grid;
+  /* grid-template-columns: repeat([col-start] 1fr); */
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+  gap: 26px;
+  margin-bottom: 50px;
+  width: 100%;
 
-
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
 }
 
 @media (max-width: 375px) {
-    .gridContainerAllreleases{
-        /* grid-template-columns: repeat(2, [col-start] 1fr); */
-        /* grid-template-columns: repeat(auto-fit, minmax(0px, 120px)); */
-    }
-    .gameCardContainerAllreleases{
-        /* grid-column: span 1; */
-        grid-template-columns: repeat(auto-fit, minmax(0px, 140px)) !important;
-        gap: 20px !important;
-
-
-    }
-    .gameItemAllreleases{
-        min-width: 20px !important;
-
-    }
-  
+  .gridContainerAllreleases {
+    /* grid-template-columns: repeat(2, [col-start] 1fr); */
+    /* grid-template-columns: repeat(auto-fit, minmax(0px, 120px)); */
+  }
+  .gameCardContainerAllreleases {
+    /* grid-column: span 1; */
+    grid-template-columns: repeat(auto-fit, minmax(0px, 140px)) !important;
+    gap: 20px !important;
+  }
+  .gameItemAllreleases {
+    min-width: 20px !important;
+  }
 }
 
 @media (max-width: 350px) {
-
-    .gameCardContainerAllreleases{
-        /* grid-column: span 1; */
-        grid-template-columns: repeat(auto-fit, minmax(0px, 124px)) !important;
-        /* gap: 20px !important; */
-
-
-    }
-  
+  .gameCardContainerAllreleases {
+    /* grid-column: span 1; */
+    grid-template-columns: repeat(auto-fit, minmax(0px, 124px)) !important;
+    /* gap: 20px !important; */
+  }
 }
 
-.gameItemAllreleases{
-    /* grid-column-end: span 2; */
-    min-width: 120px;
-    /* grid-row: 1; */
-
+.gameItemAllreleases {
+  /* grid-column-end: span 2; */
+  min-width: 120px;
+  /* grid-row: 1; */
 }
 
-.gameCardContainerAllreleases{
-    display: grid;
-    /* grid-template-columns: repeat([col-start] 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
-    gap: 26px;
-    margin-bottom: 50px;
-    width: 100%;
+.gameCardContainerAllreleases {
+  display: grid;
+  /* grid-template-columns: repeat([col-start] 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
+  gap: 26px;
+  margin-bottom: 50px;
+  width: 100%;
 
-
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
 }
 
-.sectionContainer{
-    width: auto;
-    max-width: 100%;
-
+.sectionContainer {
+  width: auto;
+  max-width: 100%;
 }
 
-.dropdownGroup{
-    display: flex;
-    flex-direction: row;
+.dropdownGroup {
+  display: flex;
+  flex-direction: row;
 }
 
-.header{
-    margin-bottom: 20px;
+.header {
+  margin-bottom: 20px;
 }

@@ -1,105 +1,93 @@
+.digitalImage {
+  max-width: 102px;
+  max-height: 102px;
+  position: relative;
+  left: 0%;
+  bottom: 0%;
+  object-fit: cover;
 
-.digitalImage{
-    width: 102px;
-    height: 102px;
-    position: absolute;
-    left: 0%;
-    top: 50px;
-    bottom: 0%;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    object-fit: cover;
+  /* icon */
 
-    /* icon */
-
-    filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.06)) 
-    drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.04)) 
-    drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.04));
-    border-radius: 6px;
+  filter: drop-shadow(0px 274px 355px rgba(222, 91, 255, 0.34))
+    drop-shadow(0px 82.603px 150.169px rgba(222, 91, 255, 0.3019))
+    drop-shadow(0px 32.3091px 25.9731px rgba(222, 91, 255, 0.27));
+  border-radius: 6px;
 }
 
-
-.digitalOnly .digitalImage{
-    left: 20%;
+.digitalOnly .digitalImage {
+  left: 0%;
 }
 
-.mediaFormLabel{
-    max-width: 150px;
-    height: 34px;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-
+.mediaFormLabel {
+  max-width: 150px;
+  height: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
-.mediaFormLabel p{
-    color: #FFFFFF;
-    opacity: 0.7;
+.mediaFormLabel p {
+  color: #ffffff;
+  opacity: 0.7;
 }
 
-.physicalImage{
-    width: auto;
-    height: 152px;
-    position: absolute;
-    right: 0px;
-    opacity: 0.5;
-    border-radius: 4px;
+.physicalImage {
+  width: auto;
+  height: 152px;
+  position: relative;
+  right: 0px;
+  opacity: 0.5;
+  border-radius: 4px;
 }
 
-.imageContainer{
-    /* width: 152px; */
-    max-width: 180px;
-    min-width: 100px;
-    height: 152px;
-    position: relative;
-    cursor: pointer;
+.imageContainer:hover {
+  opacity: 0.92;
 }
 
-.imageContainer:hover{
-    opacity: 0.92;
-}
-
-.platformList{
-    margin: 16px 0 16px 0;
-    display: flex;
-    flex-direction: row;
-    overflow: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+.platformList {
+  margin: 16px 0 16px 0;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .platformList::-webkit-scrollbar {
-    display: none;
-  }
-
-.platformIcon{
-    padding: 2px 10px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    color: #FF5E5E;
-    margin-right: 8px;
-
-
+  display: none;
 }
 
-.titleP{
-    color: white;
+.platformIcon {
+  padding: 2px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #ff5e5e;
+  margin-right: 8px;
 }
 
-.titleP:hover{
-    opacity: 0.7;
-    text-decoration: none;
-    cursor: pointer;
+.titleP {
+  color: white;
 }
 
-.card{
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: none;
-    /* max-width: 150px; */
+.titleP:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card {
+  height: 340px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 20px;
+
+  /* max-width: 150px; */
 }
