@@ -8,9 +8,7 @@
 
   /* icon */
 
-  filter: drop-shadow(0px 274px 355px rgba(222, 91, 255, 0.34))
-    drop-shadow(0px 82.603px 150.169px rgba(222, 91, 255, 0.3019))
-    drop-shadow(0px 32.3091px 25.9731px rgba(222, 91, 255, 0.27));
+  filter: drop-shadow(0px 30px 45px rgba(222, 91, 255, 0.57));
   border-radius: 6px;
 }
 
