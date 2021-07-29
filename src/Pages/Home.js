@@ -11,6 +11,7 @@ import GameItem from '../Components/GameItem';
 import PromoBanner from '../Components/PromoBanner';
 import { firebaseFirestore } from '../firebase';
 import { parse } from 'json5';
+import BoostCard from '../Components/BoostCard';
 
 
 const Home = () => {
@@ -58,11 +59,8 @@ const Home = () => {
         <div className="Home">
             <NavHeaderMobile />
             <div className='AppContainer'>
-                <div className='ActivityCards'>
-                    <ActivityRankCard />
-                    <PromoBanner url='atlus.com' imgURl='../Resources/banner/smtv-banner.png' />
-                    {/* <ActivityHypeListCard /> */}
-                </div>
+                <BoostCard />
+
                 {/* <GameCardSection  title='RELEASING SOON' type='section' location=''/>
         <GameCardSection  title='Wholesome Driect' type='section' location=''/>
         <GameCardSection  title='Summer Game Fest Kick Off' type='section' location=''/> */}
