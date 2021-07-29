@@ -23,7 +23,7 @@
 
 .gameItem {
   /* grid-column-end: span 2; */
-  min-width: 200px;
+  min-width: 220px;
   grid-row: 1;
 }
 

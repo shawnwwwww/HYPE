@@ -1,26 +1,23 @@
-.App{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    gap: 0;
-    grid-template-areas: 
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  gap: 0;
+  grid-template-areas:
     "sidebar"
     "appcontainer";
 }
 
 /*breakpoint tablet*/
 @media (min-width: 768px) {
-  .App{
+  .App {
     grid-template-columns: 1fr 5fr;
-    grid-template-areas: 
-    "sidebar appcontainer";
+    grid-template-areas: "sidebar appcontainer";
   }
-/* 1200 */
+  /* 1200 */
 }
 
-
-
-.AppContainer{
+.AppContainer {
   grid-area: appcontainer;
   padding: 80px 70px 120px 342px;
   box-sizing: border-box;
@@ -38,52 +35,50 @@
 
 /*breakpoint tablet*/
 @media (max-width: 768px) {
-  .AppContainer{
+  .AppContainer {
     padding: 40px 70px 120px 70px;
   }
-
 }
-
 
 /*breakpoint mobile*/
 @media (max-width: 480px) {
-  .AppContainer{
+  .AppContainer {
     width: 100vw;
     padding: 40px 26px 120px;
     box-sizing: border-box;
   }
-
 }
 
-.ActivityCards{
+.ActivityCards {
   display: grid;
   grid-template-columns: repeat(10, [col-start] 1fr);
   gap: 26px;
   margin-bottom: 50px;
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
-    background: #131016;
+body {
+  margin: 0;
+  padding: 0;
+  background: #211125;
 }
 
-h1{
-    font-family: Kanit;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 45px;
-    margin: 0;
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 1)
-    , rgba(255, 255, 255, 0.4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
+h1 {
+  font-family: Kanit;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  margin: 0;
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.4)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
-h4{
+h4 {
   font-family: Kanit;
   font-style: italic;
   font-weight: bold;
@@ -93,11 +88,11 @@ h4{
 
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 }
 
-h5{
+h5 {
   font-family: Kanit;
   font-style: italic;
   font-weight: bold;
@@ -105,11 +100,10 @@ h5{
   line-height: 30px;
   /* identical to box height */
   margin: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-
-h6{
+h6 {
   font-family: Kanit;
   font-style: italic;
   font-weight: bold;
@@ -118,72 +112,54 @@ h6{
   margin: 0;
 }
 
-.titleP{
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 110%;
-    /* identical to box height, or 20px */
+.titleP {
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  /* identical to box height, or 20px */
 
-
-    color: #FFFFFF;
-    margin-bottom: 4px;
+  color: #ffffff;
+  margin-bottom: 4px;
 }
 
+p {
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 106%;
+  /* identical to box height, or 17px */
 
-p{
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 106%;
-    /* identical to box height, or 17px */
-
-
-    color: #FFFFFF;
-    margin: 0;
+  color: #ffffff;
+  margin: 0;
 }
 
+.caption {
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
 
+  color: #ffffff;
 
-.caption{
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
-.boldCaption{
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 120%;
-    /* identical to box height, or 17px */
+.boldCaption {
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
 
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 }
 
-.buttonText{
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-
-    letter-spacing: 0.02em;
-
-    color: #DE5BFF;
-}
-
-button.textOnly{
+.buttonText {
   font-family: Kanit;
   font-style: normal;
   font-weight: 600;
@@ -193,22 +169,33 @@ button.textOnly{
 
   letter-spacing: 0.02em;
 
-  color: #DE5BFF;
+  color: #ea97ff;
+}
+
+button.textOnly {
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #de5bff;
   background: none;
   border: none;
   padding: 0;
 }
 
-
-.hypeButton{
-    cursor: pointer;
+.hypeButton {
+  cursor: pointer;
 }
 
-.gamePreview{
-
+.gamePreview {
 }
 
-.compact{
+.compact {
   width: 84px;
   box-sizing: border-box;
   margin-right: 20px;
@@ -216,385 +203,481 @@ button.textOnly{
 
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcraQKxaAcJxA.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcraQKxaAcJxA.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcraQKw2AcJxA.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcraQKw2AcJxA.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcraQKwyAcJxA.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcraQKwyAcJxA.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcraQKwKAcA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcraQKwKAcA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI_GjZbdhMWJy.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI_GjZbdhMWJy.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI_GjZaxhMWJy.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI_GjZaxhMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI_GjZa1hMWJy.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI_GjZa1hMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI_GjZaNhMQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI_GjZaNhMQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI92kZbdhMWJy.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI92kZbdhMWJy.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI92kZaxhMWJy.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI92kZaxhMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI92kZa1hMWJy.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI92kZa1hMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI92kZaNhMQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI92kZaNhMQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI7mlZbdhMWJy.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI7mlZbdhMWJy.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI7mlZaxhMWJy.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI7mlZaxhMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI7mlZa1hMWJy.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI7mlZa1hMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI7mlZaNhMQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI7mlZaNhMQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI6WmZbdhMWJy.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI6WmZbdhMWJy.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI6WmZaxhMWJy.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI6WmZaxhMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI6WmZa1hMWJy.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI6WmZa1hMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI6WmZaNhMQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI6WmZaNhMQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI4GnZbdhMWJy.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI4GnZbdhMWJy.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI4GnZaxhMWJy.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI4GnZaxhMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI4GnZa1hMWJy.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI4GnZa1hMWJy.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: italic;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI4GnZaNhMQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKS-Go6G5tXcraQI4GnZaNhMQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraBGwCYdA.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraBGwCYdA.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraaGwCYdA.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraaGwCYdA.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcrabGwCYdA.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcrabGwCYdA.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraVGwA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraVGwA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5mOBWzVaF5NQ.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5mOBWzVaF5NQ.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5mOBWoVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5mOBWoVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5mOBWpVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5mOBWpVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5mOBWnVaE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5mOBWnVaE.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5KPxWzVaF5NQ.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5KPxWzVaF5NQ.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5KPxWoVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5KPxWoVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5KPxWpVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5KPxWpVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5KPxWnVaE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5KPxWnVaE.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4uPhWzVaF5NQ.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4uPhWzVaF5NQ.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4uPhWoVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4uPhWoVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4uPhWpVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4uPhWpVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4uPhWnVaE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4uPhWnVaE.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4yPRWzVaF5NQ.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4yPRWzVaF5NQ.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4yPRWoVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4yPRWoVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4yPRWpVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4yPRWpVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4yPRWnVaE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4yPRWnVaE.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* thai */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4WPBWzVaF5NQ.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4WPBWzVaF5NQ.woff2)
+    format("woff2");
   unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4WPBWoVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4WPBWoVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4WPBWpVaF5NQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4WPBWpVaF5NQ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Kanit';
+  font-family: "Kanit";
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4WPBWnVaE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr4WPBWnVaE.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
