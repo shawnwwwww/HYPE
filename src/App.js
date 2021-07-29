@@ -4,7 +4,6 @@ import Sidebar from './Components/Sidebar';
 import { AuthProvider } from './Contexts/AuthContext';
 import PrivateRoute from './Components/PrivateRoute';
 
-
 import {
   BrowserRouter as Router,
   Route,
