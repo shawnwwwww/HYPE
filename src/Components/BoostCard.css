@@ -1,0 +1,35 @@
+.boostCardContainer{
+    width: 240px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border-radius: 14px;
+    position:relative
+}
+
+.boostCardVideo{
+    height: 340px;
+    object-fit: cover;
+
+}
+
+.boostCardLogo{
+    position: absolute;
+    width: 90%;
+    top: 80px;
+}
+
+.hypeButtonDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+}
