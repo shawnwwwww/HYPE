@@ -6,9 +6,8 @@ import PurchaseButton from '../Components/PurchaseButton'
 import Video from '../Components/Video'
 import { useLocation, useHistory } from "react-router-dom";
 
-
 // Receives:
-// switch_img_self_link, img_self_link, game_title, release_date, platforms
+// switch_img_self_link, img_self_link, game_title, release_date, platforms, game_id
 
 const GameDetail = () => {
     const location = useLocation();

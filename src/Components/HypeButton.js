@@ -1,12 +1,8 @@
 import React from 'react'
 import './HypeButton.css'
-import { useAuth } from '../Contexts/AuthContext';
-import { SignInModal } from './SignInModal';
-
+import { incrementCounter, decrementCounter, updateHypes, getCount } from './FirebaseHelpers';
 
 class HypeButton extends React.Component {
-
-
     constructor(props) {
         super(props);
         this.state = {
@@ -21,6 +17,13 @@ class HypeButton extends React.Component {
     }
 
     handleClick() {
+        if (this.state.isHyped) {
+            decrementCounter(this.props.game_id);
+        }
+        else {
+            incrementCounter(this.props.game_id);
+        }
+
         this.setState({
             inFocus: 1,
             hypes: this.state.isHyped ? this.state.hypes - 1 : this.state.hypes + 1,

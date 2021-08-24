@@ -1,35 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import  GameItem  from './GameItem'
-import  Dropdown  from './Dropdown'
-import { GameData } from '../Database/GameData'
 import './GameCardSection.css'
 import firebase from 'firebase'
-// import { useAuth } from '../Contexts/AuthContext';
-// import { SignInModal } from './SignInModal';
-import { gameConverter } from './FirebaseHelpers'
+import { gameConverter, getCount } from './FirebaseHelpers'
 
 
 var storage = firebase.storage();
 
 function GameCardSection(props) {
-    // const importLocation = props.location;
     const [game_data, setGameData] = useState([]);
-    // const storageRef = firebase.storage().ref();
-    // const { currentUser } = useAuth();
+
     let items;
     
     const ref = firebase.firestore();
-    
-    // realtime update
-    // function getGameData() {
-    //     ref.onSnapshot((querySnapshot) => {
-    //         const items = [];
-    //         querySnapshot.forEach ((doc) => {
-    //             items.push(doc.data());
-    //         });
-    //         setGameData(items);
-    //     });
-    // }
 
     function formatDate(date) {
         let month = date.getMonth() + 1;
@@ -43,6 +26,7 @@ function GameCardSection(props) {
                 ref.collection('game_data').withConverter(gameConverter).get().then((item) => {
                     const items = item.docs.map((doc) => doc.data());
                     setGameData(items);
+                    console.log(items);
                 })
                 break;
             case 'releasingSoon':
@@ -50,18 +34,22 @@ function GameCardSection(props) {
                 ref.collection('game_data').withConverter(gameConverter).get().then((item) => {
                     const items = item.docs.map((doc) => doc.data());
                     setGameData(items);
+                    console.log(items);
                 })
                 break;
             case 'wholesomeDirect':
                 ref.collection('game_data').withConverter(gameConverter).get().then((item) => {
                     const items = item.docs.map((doc) => doc.data());
                     setGameData(items);
+                    console.log(items);
                 })
                 break;
             case 'summerGameFestKickoff':
                 ref.collection('game_data').withConverter(gameConverter).get().then((item) => {
                     const items = item.docs.map((doc) => doc.data());
                     setGameData(items);
+                    console.log(items);
+
                 })
                 break;
         }
@@ -101,6 +89,7 @@ function GameCardSection(props) {
                                     is_physical={game_data[val].is_physical}
                                     is_digital={game_data[val].is_digital}
                                     hypes={game_data[val].hype}
+                                    game_id={game_data[val].game_id}
                                     />
                                 </div>
                             )
@@ -127,6 +116,7 @@ function GameCardSection(props) {
                                         is_physical={game_data[val].is_physical}
                                         is_digital={game_data[val].is_digital}
                                         hypes={game_data[val].hype}
+                                        game_id={game_data[val].game_id}
                                         />
                                     </div>
                                 )

@@ -2,7 +2,8 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/storage';
 import 'firebase/firestore';
-
+import exports from '@google-cloud/firestore'
+const functions = require('firebase-functions');
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -19,5 +20,21 @@ const firebaseConfig = {
   const firebaseStorage = firebase.storage();
   const firebaseFirestore = firebase.firestore();
   const auth = firebaseApp.auth()
+
+  exports.updateUser = functions.firestore
+  .document('counters/{game_id}/shards/{shard_id}')
+  .onUpdate((change, context) => {
+    console.log("it's working")
+    return firebaseFirestore.collection('counters').doc(context.params.game_id).collection('shards').get().then((snapshot) => {
+      let total_count = 0;
+      snapshot.forEach((doc) => {
+          total_count += doc.data().count;
+      });
+      
+      return firebaseFirestore.collection(context.params.game_id).doc('hype').update({
+        hype: total_count
+      })
+    });
+  });
 
   export {firebaseStorage, firebaseFirestore, auth};

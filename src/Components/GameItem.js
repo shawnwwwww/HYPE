@@ -43,6 +43,7 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
                 is_physical: is_physical,
                 is_digital: is_digital,
                 hypes: hypes,
+                game_id: game_id,
             }
         });
     };
@@ -85,7 +86,7 @@ function GameItem({ switch_img_self_link, img_self_link, game_title, release_dat
                 </div>
             </div>
 
-            {currentUser === null ? <HypeButtonMock hypes={10}/> : <HypeButton hypes={hypes}/>}
+            {currentUser === null ? <HypeButtonMock hypes={10}/> : <HypeButton hypes={hypes} game_id={game_id} />}
 
         </div>
     )
